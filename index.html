@@ -64,27 +64,30 @@
     <p>GitHub: <a href="https://github.com/Berrin006">GitHub</a></p>
 
 
-    <form action="https://formshow.systementor.se" method="POST">
+    <form action="https://formshow.systementor.se/" method="post">
+        <div class="form-group">
+            <h2>NEW USER REGISTER HERE</h2>
+            <p>Please fill out the following information</p>
 
-        <label for="email"></label><br>
-        <input type="email" name="email" id="email" placeholder="name@example.com"><br>
+            <input type="email" name="email" class="mb-3" id="email" placeholder="Enter Email" />
 
-        <label for="fname"></label><br>
-        <input type="text" name="fname" id="fname" placeholder="First Name">
+            <div id="special-div">
+                <input type="text" name="fname" class="mb-3" id="fname" placeholder="First Name" />
+                <input type="text" name="lname" class="mb-3" id="lname" placeholder="Last Name" />
+            </div>
 
-        <label for="lname"></label>
-        <input type="text" name="lname" id="lname" placeholder="Last Name"><br>
+            <div id="special-div">
+                <input type="password" name="pword" class="mb-3" id="pword" placeholder="Enter Password" />
+                <input type="password" name="c-pword" class="mb-3" id="cpword" placeholder="Confirm Password" />
+            </div>
 
-        <label for="password"></label><br>
-        <input type="password" name="password" id="password" placeholder="Create a password"><br>
+            <input type="radio" name="updates" class="mb-3" />
+            <label for="updates">Send me important updates</label>
 
-        <label for="passwordConfirm"></label><br>
-        <input type="password" name="passwordConfirm" id="passwordConfirm" placeholder="Repeat password"><br><br>
-
-        <input type="checkbox" id="updates" name="updates" value="yes">
-        <label for="updates">Send me important updates</label><br><br>
-
-        <button type="submit">REGISTER ME</button>
+            <div>
+                <button class="btn rounded-0">Register Me</button>
+            </div>
+        </div>
     </form>
 
 
