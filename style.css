@@ -1,19 +1,18 @@
-/* --- General Styles --- */
 body {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Arial, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
     margin: 0;
     padding: 0;
-    background-color: gray;
+    color: #222;
 }
 
 img {
-    max-width: 100%;
+    max-width: 200px;
     height: auto;
     display: block;
     margin: 20px auto;
+    border-radius: 50%;
 }
 
-/* --- Navigation --- */
 nav {
     background: lightgrey;
     padding: 15px;
@@ -23,61 +22,30 @@ nav {
 nav a {
     margin: 0 15px;
     font-weight: bold;
-    color: #007bff;
     text-decoration: none;
 }
 
 nav a:hover {
-    color: #0056b3;
-    text-decoration: underline;
-}
-
-pre{
-    font-size: 16px;
-    line-height: 1.6;
-    margin-bottom: 15px;
-    font-family: 'Times New Roman', Times, serif;
-    text-align: center;
-}
-
-/* --- Links & Buttons --- */
-a {
-    color: #007bff;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #0056b3;
     text-decoration: underline;
 }
 
 .link-section {
     display: flex;
-    gap: 15px;
     justify-content: center;
     text-align: center;
     margin-bottom: 30px;
 }
 
-.link-section a i {
-    transition: .3s;
-    color: black;
-}
-
-.link-section a:hover i {
-    color: blueviolet;
-}
-
-/* --- Content Sections --- */
 .about-section {
     padding: 20px;
     max-width: 800px;
     margin: 0 auto;
 }
 
-h1 {
+h2,
+h3 {
     text-align: center;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 p,
@@ -85,27 +53,24 @@ li {
     font-size: 16px;
     line-height: 1.6;
     margin-bottom: 15px;
+    text-align: center;
 }
 
 ul {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
     text-align: center;
 }
 
-/* --- Footer & Form --- */
+/* Footer & form */
 footer {
-    background-color: #777;
     padding: 40px 20px;
     color: white;
 }
 
-
 .footer-content {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    gap: 50px;
     max-width: 1000px;
     margin: 0 auto;
 }
@@ -115,16 +80,23 @@ footer {
     text-align: left;
 }
 
-.contactMe-section a {
-    color: #fff;
-    text-decoration: underline;
+.form-section {
+    width: 320px;
+    background-color: rgba(255, 255, 255, 0.06);
+    padding: 20px;
+    border-radius: 6px;
+    margin: 20px;
 }
 
-.form-section {
-    width: 300px;
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    border-radius: 5px;
+.form__field {
+    color: black;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: white;
 }
 
 input[type=text],
@@ -132,23 +104,24 @@ input[type=email],
 input[type=password],
 select {
     width: 100%;
-    padding: 12px;
-    margin: 8px 0;
-    display: inline-block;
+    padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    box-sizing: border-box;
+}
+
+.form__updates {
+    margin-top: 10px;
+    color: #fff;
 }
 
 button[type=submit] {
     width: 100%;
     background-color: #4CAF50;
     color: white;
-    padding: 14px;
+    padding: 12px;
     margin: 8px 0;
     border: none;
     border-radius: 4px;
-    cursor: pointer;
     font-size: 16px;
 }
 
@@ -156,7 +129,28 @@ button[type=submit]:hover {
     background-color: #45a049;
 }
 
-label {
-    display: block;
-    margin-bottom: 5px;
+.field-error {
+    color: #ffdddd;
+    font-size: 13px;
+    min-height: 18px;
+    margin-top: 6px;
+}
+
+@media (max-width: 600px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contactMe-section,
+    .form-section {
+        width: 100%;
+        max-width: 420px;
+    }
+
+    p,
+    li {
+        text-align: left;
+        padding: 0 16px;
+    }
 }
