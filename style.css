@@ -65,7 +65,7 @@ ul {
 /* Footer & form */
 footer {
     padding: 40px 20px;
-    color: white;
+    color: black;
 }
 
 .footer-content {
@@ -78,11 +78,11 @@ footer {
 .contactMe-section {
     width: 300px;
     text-align: left;
+    padding: 0px;
 }
 
 .form-section {
     width: 320px;
-    background-color: rgba(255, 255, 255, 0.06);
     padding: 20px;
     border-radius: 6px;
     margin: 20px;
@@ -96,7 +96,6 @@ label {
     display: block;
     margin-bottom: 6px;
     font-weight: 600;
-    color: white;
 }
 
 input[type=text],
@@ -105,19 +104,18 @@ input[type=password],
 select {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid;
     border-radius: 4px;
 }
 
 .form__updates {
     margin-top: 10px;
-    color: #fff;
+    color: black;
 }
 
 button[type=submit] {
     width: 100%;
     background-color: #4CAF50;
-    color: white;
     padding: 12px;
     margin: 8px 0;
     border: none;
@@ -130,7 +128,6 @@ button[type=submit]:hover {
 }
 
 .field-error {
-    color: #ffdddd;
     font-size: 13px;
     min-height: 18px;
     margin-top: 6px;
