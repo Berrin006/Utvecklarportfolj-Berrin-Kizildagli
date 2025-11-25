@@ -2,14 +2,20 @@
 <html lang="en">
 
 <head>
+
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Developer Portfolio — Berrin Kizildagli</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="form.css">
     <script src="https://kit.fontawesome.com/9460d60ee2.js" crossorigin="anonymous" defer></script>
+
 </head>
 
 <body>
+
+    <!--Navbar-->
 
     <header>
         <nav>
@@ -20,20 +26,28 @@
         </nav>
     </header>
 
+    <!--Start (Image & Links)-->
+
     <main>
         <img src="profil_bild.png" alt="Profilbild - Berrin Kizildagli" title="It's Me Hi">
 
-        <div class="link-section" >
-            <p>CV: <a href="Berrin Kizildagli CV 20251010.pdf" target="_blank" ><i
-                        class="fa-solid fa-file"></i></a></p>
-            <p>Instagram: <a href="https://www.instagram.com/berrin.foto/" target="_blank" ><i
+        <div class="link-section">
+            <p>CV: <a href="Berrin Kizildagli CV 20251010.pdf" target="_blank"><i class="fa-solid fa-file"></i></a></p>
+
+            <p>Instagram: <a href="https://www.instagram.com/berrin.foto/" target="_blank"><i
                         class="fa-brands fa-instagram"></i></a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/berrin-kizildagli-10ba9b201/" target="_blank"
-                    ><i class="fa-brands fa-linkedin"></i></a></p>
+
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/berrin-kizildagli-10ba9b201/" target="_blank"><i
+                        class="fa-brands fa-linkedin"></i></a></p>
+
             <p>Portfolio: <a href="index.html"><i class="fa-solid fa-address-book"></i></a></p>
-            <p>GitHub: <a href="https://github.com/Berrin006" target="_blank" ><i
-                        class="fa-brands fa-github"></i></a></p>
+
+            <p>GitHub: <a href="https://github.com/Berrin006" target="_blank"><i class="fa-brands fa-github"></i></a>
+
+            </p>
         </div>
+
+     <!--About me-->
 
         <section id="about" class="about-section">
             <h2 id="about-heading">ABOUT ME</h2>
@@ -43,6 +57,8 @@
                 Web Development 1, and Computer and Network Technology, I gained both practical and theoretical
                 experience.
             </p>
+
+    <!--Skills-->
 
             <h3>Skills</h3>
             <ul>
@@ -55,32 +71,35 @@
             </ul>
 
             <h3>Projects</h3>
-            <p><a href="https://github.com/Berrin006/ProductApp" target="_blank" >GitHub Project: Produkt
-                    List</a></p>
+            <p><a href="https://github.com/Berrin006/ProductApp" target="_blank">GitHub Project: Produkt List</a></p>
 
             <h3>Reference</h3>
             <p>Morgan Malm: High school teacher, my mentor.</p>
         </section>
     </main>
 
+    <!--Form & Contact-->
+
     <footer id="contact">
         <div class="footer-content">
-            <div class="contactMe-section" >
+            <div class="contactMe-section">
                 <h2 id="contact-heading">CONTACT ME</h2>
-                <p>Instagram: <a href="https://www.instagram.com/berrin.foto/" target="_blank" ><i
+                <p>Instagram: <a href="https://www.instagram.com/berrin.foto/" target="_blank"><i
                             class="fa-brands fa-instagram"></i> @berrin.foto</a></p>
-                <p>LinkedIn: <a href="https://www.linkedin.com/in/berrin-kizildagli-10ba9b201/" target="_blank"
-                        ><i class="fa-brands fa-linkedin"></i></a></p>
-                <p>GitHub: <a href="https://github.com/Berrin006" target="_blank" ><i
+
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/berrin-kizildagli-10ba9b201/" target="_blank"><i
+                            class="fa-brands fa-linkedin"></i></a></p>
+
+                <p>GitHub: <a href="https://github.com/Berrin006" target="_blank"><i
                             class="fa-brands fa-github"></i></a></p>
             </div>
 
-            <div class="form-section" >
+            <div class="form-section">
                 <h2 id="register-heading">Register</h2>
-                <form id="registerForm" action="https://formshow.systementor.se/" >
+                <form id="registerForm" action="https://formshow.systementor.se/">
                     <div class="form__field">
                         <label for="email">Email</label>
-                        <input type="email" id="email" name="email" placeholder="Enter Email"/>
+                        <input type="email" id="email" name="email" placeholder="Enter Email" />
                         <div id="emailHelp" class="field-error"></div>
                     </div>
 
@@ -96,13 +115,13 @@
 
                     <div class="form__field">
                         <label for="pword">Password</label>
-                        <input type="password" id="pword" name="pword" placeholder="Enter Password"/>
+                        <input type="password" id="pword" name="pword" placeholder="Enter Password" />
                         <div id="pwHelp" class="field-error"></div>
                     </div>
 
                     <div class="form__field">
                         <label for="c-pword">Confirm Password</label>
-                        <input type="password" id="c-pword" name="c-pword" placeholder="Confirm Password"/>
+                        <input type="password" id="c-pword" name="c-pword" placeholder="Confirm Password" />
                         <div id="cpwHelp" class="field-error"></div>
                     </div>
 
