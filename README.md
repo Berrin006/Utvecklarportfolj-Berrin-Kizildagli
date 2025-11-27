@@ -1,28 +1,42 @@
 # Developer Portfolio — Berrin Kizildagli
 
-## Beskrivning
-Detta projekt är en personlig developer-portfolio byggd med HTML5 och CSS3. Den innehåller informationssektioner, länkar till sociala profiler och ett kontakt/registreringsformulär.
+## Beskrivning av Projektet
+Detta projekt är en personlig utvecklarportfölj (Frontend), byggd som ett examensarbete inom kursen Webbutveckling. Målet är att visuellt presentera min tekniska kompetens och mina bästa projekt. Portföljen är helt byggd med fokus på moderna webbstandarder, användarvänlighet och tillgänglighet.
 
-## Tekniker
-- HTML5 (semantisk markup)
-- CSS3 (Flexbox & Grid)
-- Enkel client-side JavaScript för formulärvalidering
-- FontAwesome för ikoner
+## Tekniker och Teknologier
+Portföljen är strikt byggd med följande tekniker:
 
-## Principer / metoder som använts
-- Semantisk HTML: `header`, `main`, `footer`, `nav`.
-- Accessibility: `label` för varje input.
-- DRY: gemensamma stilklasser för formulärfält.
-- Responsiv layout med `display: flex` och media queries.
+* **HTML5** (Semantisk struktur)
+* **CSS3** (Styling och layout)
+* **FontAwesome** (Ikoner för sociala medier och funktionalitet)
 
-## Så kör du lokalt
-1. Klona repo:
-https://github.com/Berrin006/Utvecklarportf-lj-Berrin-Kizildagli
-2. Öppna `index.html` i en webbläsare (alternativt hosta via Live Server i VSCode).
+## Tillämpade Principer och Metoder
 
-## Testfall (manuella)
+Detta projekt har utvecklats med följande *best practices* och krav i åtanke:
 
-## Known issues / framtida förbättringar
+### 1. Layout och Design
+* **Responsiv Design (Krav VG14):** Fullt responsiv layout med CSS `@media` queries för att säkerställa optimal visning på alla enheter (mobil, surfplatta, desktop).
+* **Modern Layout (Krav G7):** Layouten är uppbyggd med CSS **Flexbox** för att hantera dynamiska sektioner och anpassningsbar placering av element.
+* **Modulär Kod:** CSS-filerna är separerade (`style.css`, `navbar.css`, `form.css`) för ökad läsbarhet och underhållbarhet (följer *Separation of Concerns*).
+
+### 2. Kodkvalitet och Standarder
+* **Semantisk HTML:** Användning av korrekta HTML5-element (`<header>`, `<nav>`, `<main>`, `<section>`, `<footer>`) för logisk struktur.
+* **Accessibility:** Grundläggande tillgänglighet är säkerställd genom tydliga `alt`-attribut på bilder, korrekt rubrikshierarki och användning av `label` för alla formulärfält.
+* **DRY (Don't Repeat Yourself):** Gemensamma stilklasser och funktioner har återanvänts för att minska redundant kod.
+
+
+##  Så kör du lokalt (För Granskaren)
+1.  **Klona repo:**
+    ```bash
+    git clone [https://github.com/Berrin006/Utvecklarportf-lj-Berrin-Kizildagli](https://github.com/Berrin006/Utvecklarportf-lj-Berrin-Kizildagli)
+    ```
+2.  **Kör applikationen:**
+    Öppna filen `index.html` direkt i valfri webbläsare (t.ex. Google Chrome eller Firefox).
+
+---
 
 ## Kontakt
-Berrin Kizildagli — https://github.com/Berrin006 — https://www.linkedin.com/in/berrin-kizildagli-10ba9b201/
+**Berrin Kizildagli**
+
+* GitHub: [https://github.com/Berrin006](https://github.com/Berrin006)
+* LinkedIn: [https://www.linkedin.com/in/berrin-kizildagli-10ba9b201/](https://www.linkedin.com/in/berrin-kizildagli-10ba9b201/)
