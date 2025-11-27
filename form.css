@@ -7,6 +7,8 @@ footer {
 .footer-content {
     display: flex;
     justify-content: center;
+    align-items: flex-start;   
+    gap: 50px;                 
     max-width: 1000px;
     margin: 0 auto;
 }
@@ -14,7 +16,7 @@ footer {
 .contactMe-section {
     width: 300px;
     text-align: left;
-    padding: 0px;
+    padding: 0;
 }
 
 .contactMe-section ul {
@@ -29,9 +31,9 @@ footer {
 
 .form-section {
     width: 320px;
-    padding: 20px;
+    padding: 0 20px;   
     border-radius: 6px;
-    margin: 20px;
+    margin: 0;         
 }
 
 .contactMe-section a {
