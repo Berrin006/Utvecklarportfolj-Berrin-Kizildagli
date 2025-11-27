@@ -3,30 +3,121 @@
 
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Utvecklarportfölj</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Developer Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <img src="profil_bild-removebg-preview.png" alt="profil">
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="Berrin Kizildagli CV 20251010.pdf" target="_blank">CV</a>
+            <a href="#">About Me</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
 
+    <img src="profil_bild-removebg-preview.png" alt="Profilbild - Berrin Kizildagli">
 
+    <div class="link-section">
+        <a href="Berrin Kizildagli CV 20251010.pdf" target="_blank" class="btn-cv">Download CV</a>
 
-<button onclick="window.open('Berrin Kizildagli CV 20251010.pdf', '_blank')">Download CV</button>
-    
-<ul>
-  <li><a href="index.html">Home</a></li>
-  <li><a href="Berrin Kizildagli CV 20251010.pdf">CV</a></li>
-  <li><a href="contact">Contact</a></li>
-  <li><a href="about">About</a></li>
-</ul>
+        <a href="https://github.com/Berrin006">GitHub</a>
+        <a href="https://www.instagram.com/berrin.foto/">Instagram</a>
+        <a href="index.html">Portfolio</a>
+        <a href="https://www.linkedin.com/in/berrin-kizildagli-10ba9b201/">Linkedin</a>
+    </div>
 
-<a href="https://github.com/Berrin006">GitHub</a>
+    <div class="about-section">
+        <h1>ABOUT ME</h1>
+        
+        <p>
+            Hello! My name is Berrin Kizildagli and I am 19 years old.
+            In June 2025, I graduated after completing the Technology program with a specialization in Information and Media Technology, which involved a strong focus on programming.
+        </p>
+        <p>
+            During my education, I took courses such as Programming 1 and 2, Web Development 1, and Computer and Network Technology.
+            There, I gained experience through both practical and theoretical work, including with Cisco, which has given me a solid understanding of computer hardware and software.
+        </p>
+        <p>
+            Through this, I have built a strong foundation in IT and web development.
+            My great interest in computers drives me to constantly develop and stay up to date with new technologies.
+            I am disciplined, learn quickly, and am passionate about growing within this field.
+        </p>
 
+        <h1>Skills</h1>
+        <ul>
+            <li>C#</li>
+            <li>ASP.NET / .NET Development</li>
+            <li>HTML5, CSS3, JavaScript</li>
+            <li>Frontend development</li>
+            <li>Git & version control</li>
+            <li>Databases & SQL</li>
+        </ul>
 
+        <h1>Projects</h1>
+        <p><a href="https://github.com/Berrin006/ProductApp">GitHub Project: Produkt List</a></p>
+
+        <h1>Reference</h1>
+        <p>Morgan Malm: High school teacher, my mentor.</p>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            
+            <div class="contactMe-section">
+                <h1>CONTACT ME</h1>
+                <p>Instagram: <a href="https://www.instagram.com/berrin.foto/">Instagram</a></p>
+                <p>Linkedin: <a href="https://www.linkedin.com/in/berrin-kizildagli-10ba9b201/">Linkedin</a></p>
+                <p>Portfolio: <a href="index.html">Portfolio</a></p>
+                <p>GitHub: <a href="https://github.com/Berrin006">GitHub</a></p>
+            </div>
+
+            <div class="form-section">
+                <p>Please fill out the following information</p>
+                
+                <form action="https://formshow.systementor.se/" method="post">
+                    
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Enter Email" required />
+                    </div>
+
+                    <div>
+                        <label for="fname">First Name</label>
+                        <input type="text" name="fname" id="fname" placeholder="First Name" />
+                    </div>
+                    
+                    <div>
+                        <label for="lname">Last Name</label>
+                        <input type="text" name="lname" id="lname" placeholder="Last Name" />
+                    </div>
+
+                    <div>
+                        <label for="pword">Password</label>
+                        <input type="password" name="pword" id="pword" placeholder="Enter Password" />
+                    </div>
+                    
+                    <div>
+                        <label for="c-pword">Confirm Password</label>
+                        <input type="password" name="c-pword" id="c-pword" placeholder="Confirm Password" />
+                    </div>
+
+                    <div style="margin-top:10px;">
+                        <input type="radio" name="updates" id="updates" value="yes" />
+                        <label for="updates" style="display:inline;">Send me important updates</label>
+                    </div>
+
+                    <div>
+                        <button type="submit">Register Me</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </footer>
 
 </body>
-
 </html>
