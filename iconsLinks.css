@@ -1,4 +1,5 @@
 /* --- LÄNKAR / IKONER --- */
+
 .link-section {
     display: flex;
     justify-content: center;
@@ -12,7 +13,6 @@
     transition: color 0.3s ease;
 }
 
-
 .link-section a .fa-linkedin:hover,
 .link-section a .fa-square-instagram:hover,
 .link-section a .fa-github:hover,
@@ -22,7 +22,11 @@
 }
 
 
+
+
+
 /* --- SKILLS IKONER --- */
+
 .skills-icons {
     display: flex;
     justify-content: center;
@@ -32,11 +36,15 @@
     padding: 0 10px;
 }
 
+
+
 .skill-item {
     text-align: center;
     width: 80px;
     margin-bottom: 10px;
 }
+
+
 
 .skills-icons img {
     width: 50px;
