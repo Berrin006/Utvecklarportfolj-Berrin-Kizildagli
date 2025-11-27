@@ -1,8 +1,18 @@
+/* --- GLOBAL OCH TYPOGRAFI --- */
 body {
     font-family: Arial, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
     margin: 0;
     padding: 0;
     color: #222;
+    background-color: darkgray;
+    overflow-x: hidden;
+    text-align: center;
+}
+
+main {
+    max-width: 1000px; 
+    margin: 0 auto; 
+    padding: 20px; 
 }
 
 img {
@@ -10,14 +20,12 @@ img {
     height: auto;
     display: block;
     margin: 20px auto;
-    border-radius: 50%;
+    border-radius: 40px;
 }
 
-.link-section {
-    display: flex;
-    justify-content: center;
+.MyName {
     text-align: center;
-    margin-bottom: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .about-section {

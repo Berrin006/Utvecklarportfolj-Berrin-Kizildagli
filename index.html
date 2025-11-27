@@ -2,20 +2,17 @@
 <html lang="en">
 
 <head>
-
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Developer Portfolio — Berrin Kizildagli</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="iconsLinks.css">
     <script src="https://kit.fontawesome.com/9460d60ee2.js" crossorigin="anonymous" defer></script>
-
 </head>
 
 <body>
-
-    <!--Navbar-->
 
     <header>
         <nav>
@@ -26,44 +23,67 @@
         </nav>
     </header>
 
-    <!--Start (Image & Links)-->
-
     <main>
         <img src="profil_bild.png" alt="Profilbild - Berrin Kizildagli" title="It's Me Hi">
+        <h1 class="MyName">Berrin Kizildagli</h1>
 
         <div class="link-section">
-            <p>CV: <a href="Berrin Kizildagli CV 20251010.pdf" target="_blank"><i class="fa-solid fa-file"></i></a></p>
+            <a href="Berrin Kizildagli CV 20251010.pdf" target="_blank" title="CV">
+                <i class="fa-solid fa-file"></i>
+            </a>
 
-            <p>Instagram: <a href="https://www.instagram.com/berrin.foto/" target="_blank"><i
-                        class="fa-brands fa-instagram"></i></a></p>
+            <a href="https://www.instagram.com/berrin.foto/" target="_blank" title="Instagram">
+                <i class="fa-brands fa-square-instagram"></i>
+            </a>
 
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/berrin-kizildagli-10ba9b201/" target="_blank"><i
-                        class="fa-brands fa-linkedin"></i></a></p>
+            <a href="https://www.linkedin.com/in/berrin-kizildagli-10ba9b201/" target="_blank" title="Linkedin">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
 
-            <p>Portfolio: <a href="index.html"><i class="fa-solid fa-address-book"></i></a></p>
+            <a href="index.html" title="Portfolio">
+                <i class="fa-solid fa-address-book"></i>
+            </a>
 
-            <p>GitHub: <a href="https://github.com/Berrin006" target="_blank"><i class="fa-brands fa-github"></i></a>
-
-            </p>
+            <a href="https://github.com/Berrin006" target="_blank" title="GitHub">
+                <i class="fa-brands fa-github"></i>
+            </a>
         </div>
-
-     <!--About me-->
 
         <section id="about" class="about-section">
             <h2 id="about-heading">ABOUT ME</h2>
             <p>
                 I’m Berrin Kizildagli, 19 years old, and I graduated in June 2025 from the Technology program
                 with a specialization in Information and Media Technology. Through courses like Programming 1–2,
-                Web Development 1, and Computer and Network Technology, I gained both practical and theoretical
+                Web Development 1, and Web Development 1, and Computer and Network Technology, I gained both practical
+                and theoretical
                 experience.
             </p>
 
-    <!--Skills-->
-
             <h3>Skills</h3>
+            <div class="skills-icons">
+                <div class="skill-item">
+                    <img src="C++_Logo.svg.png" alt="C++">
+                </div>
+                <div class="skill-item">
+                    <img src="Csharp_Logo.png" alt="C#">
+                </div>
+                <div class="skill-item">
+                    <img src="java.png" alt="Java">
+                </div>
+                <div class="skill-item">
+                    <img src="javascript.png" alt="JavaScript">
+                </div>
+                <div class="skill-item">
+                    <img src="Python-logo.png" alt="Python">
+                </div>
+                <div class="skill-item">
+                    <img src="html5.png" alt="HTML5">
+                </div>
+                <div class="skill-item">
+                    <img src="CSS3_logo.png" alt="CSS3">
+                </div>
+            </div>
             <ul>
-                <li>Programming Languages: C++, C#, Java, JavaScript</li>
-                <li>Web Technologies: HTML5, CSS3, JavaScript</li>
                 <li>Frameworks & Tools: ASP.NET / .NET</li>
                 <li>Frontend Development</li>
                 <li>Git & Version Control</li>
@@ -78,63 +98,59 @@
         </section>
     </main>
 
-    <!--Form & Contact-->
-
     <footer id="contact">
         <div class="footer-content">
             <div class="contactMe-section">
                 <h2 id="contact-heading">CONTACT ME</h2>
-                <p>Instagram: <a href="https://www.instagram.com/berrin.foto/" target="_blank"><i
-                            class="fa-brands fa-instagram"></i> @berrin.foto</a></p>
 
-                <p>LinkedIn: <a href="https://www.linkedin.com/in/berrin-kizildagli-10ba9b201/" target="_blank"><i
-                            class="fa-brands fa-linkedin"></i></a></p>
+                <ul>
+                    <li>
+                        <a href="https://www.instagram.com/berrin.foto/" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>@berrin.foto
+                        </a>
+                    </li>
 
-                <p>GitHub: <a href="https://github.com/Berrin006" target="_blank"><i
-                            class="fa-brands fa-github"></i></a></p>
+                    <li>
+                        <a href="https://www.linkedin.com/in/berrin-kizildagli-10ba9b201/" target="_blank">
+                            <i class="fa-brands fa-linkedin"></i> LinkedIn
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://github.com/Berrin006" target="_blank">
+                            <i class="fa-brands fa-github"></i> GitHub
+                        </a>
+                    </li>
+                </ul>
             </div>
 
             <div class="form-section">
                 <h2 id="register-heading">Register</h2>
                 <form id="registerForm" action="https://formshow.systementor.se/">
-                    <div class="form__field">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" placeholder="Enter Email" />
-                        <div id="emailHelp" class="field-error"></div>
-                    </div>
+                    <div class="container">
+                        <label for="fname"><b>First Name</b></label>
+                        <input type="text" placeholder="Enter First Name" name="fname" id="fname" required>
 
-                    <div class="form__field">
-                        <label for="fname">First Name</label>
-                        <input type="text" id="fname" name="fname" placeholder="First Name" />
-                    </div>
+                        <label for="lname"><b>Last Name</b></label>
+                        <input type="text" placeholder="Enter Last Name" name="lname" id="lname" required>
 
-                    <div class="form__field">
-                        <label for="lname">Last Name</label>
-                        <input type="text" id="lname" name="lname" placeholder="Last Name" />
-                    </div>
+                        <label for="email"><b>Email</b></label>
+                        <input type="email" placeholder="Enter Email" name="email" id="email" required>
 
-                    <div class="form__field">
-                        <label for="pword">Password</label>
-                        <input type="password" id="pword" name="pword" placeholder="Enter Password" />
-                        <div id="pwHelp" class="field-error"></div>
-                    </div>
+                        <label for="psw"><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
 
-                    <div class="form__field">
-                        <label for="c-pword">Confirm Password</label>
-                        <input type="password" id="c-pword" name="c-pword" placeholder="Confirm Password" />
-                        <div id="cpwHelp" class="field-error"></div>
-                    </div>
+                        <label for="psw-repeat"><b>Confirm Password</b></label>
+                        <input type="password" placeholder="Confirm Password" name="psw-repeat" id="psw-repeat"
+                            required>
 
-                    <div class="form__updates">
-                        <input type="checkbox" id="updates" name="updates" value="yes" />
-                        <label for="updates">Send me important updates</label>
-                    </div>
-
-                    <div class="form__field">
-                        <button type="submit">Register Me</button>
+                        <button type="submit" class="registerbtn">Register</button>
                     </div>
                 </form>
             </div>
 
         </div>
     </footer>
+</body>
+
+</html>
