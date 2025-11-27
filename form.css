@@ -1,7 +1,8 @@
-/* --- FOOTER OCH FORMULÄR --- */
+/* --- FOOTER --- */
 footer {
     padding: 40px 20px;
-    color: black;
+    color: #222;
+    background-color: #e0e0e0; 
 }
 
 .footer-content {
@@ -11,12 +12,14 @@ footer {
     gap: 50px;                 
     max-width: 1000px;
     margin: 0 auto;
+    flex-wrap: wrap;
 }
 
-.contactMe-section {
-    width: 300px;
+.contactMe-section,
+.form-section {
+    flex: 1 1 300px;
+    min-width: 280px;
     text-align: left;
-    padding: 0;
 }
 
 .contactMe-section ul {
@@ -29,21 +32,21 @@ footer {
     margin-bottom: 10px;
 }
 
-.form-section {
-    width: 320px;
-    padding: 0 20px;   
-    border-radius: 6px;
-    margin: 0;         
-}
-
 .contactMe-section a {
     color: #222;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
-.contactMe-section a:hover {
-    color: #0077B5;
+.contactMe-section a:hover,
+.contactMe-section a:focus {
+    color: #0077B5; 
+}
+
+.form-section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 6px;
 }
 
 label {
@@ -57,14 +60,11 @@ input[type=email],
 input[type=password],
 select {
     width: 100%;
-    padding: 5px;
+    padding: 8px;
     border: 1px solid #222;
     border-radius: 4px;
-}
-
-.form__updates {
-    margin-top: 10px;
-    color: black;
+    margin-bottom: 10px;
+    box-sizing: border-box;
 }
 
 button[type=submit] {
@@ -76,9 +76,12 @@ button[type=submit] {
     border-radius: 4px;
     font-size: 16px;
     color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-button[type=submit]:hover {
+button[type=submit]:hover,
+button[type=submit]:focus {
     background-color: #45a049;
 }
 
@@ -88,30 +91,17 @@ button[type=submit]:hover {
     margin-top: 6px;
 }
 
+/* --- Footer Responsiv --- */
 @media (max-width: 600px) {
     .footer-content {
         flex-direction: column;
         align-items: center;
-    }
-
-    .contactMe-section,
-    .form-section {
-        width: 100%;
-        max-width: 420px;
-        box-sizing: border-box;
-    }
-
-    .form-section {
-        margin: 20px 0;
+        gap: 30px;
     }
 
     p,
     li {
         text-align: left;
         padding: 0 16px;
-    }
-
-    .contactMe-section {
-        padding: 0;
     }
 }
