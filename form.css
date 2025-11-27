@@ -1,0 +1,116 @@
+/* --- FOOTER OCH FORMULÄR --- */
+footer {
+    padding: 40px 20px;
+    color: black;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.contactMe-section {
+    width: 300px;
+    text-align: left;
+    padding: 0px;
+}
+
+.contactMe-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contactMe-section li {
+    margin-bottom: 10px;
+}
+
+.form-section {
+    width: 320px;
+    padding: 20px;
+    border-radius: 6px;
+    margin: 20px;
+}
+
+.contactMe-section a {
+    color: #222;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contactMe-section a:hover {
+    color: #0077B5;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+input[type=text],
+input[type=email],
+input[type=password],
+select {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #222;
+    border-radius: 4px;
+}
+
+.form__updates {
+    margin-top: 10px;
+    color: black;
+}
+
+button[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    padding: 12px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    color: white;
+}
+
+button[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.field-error {
+    font-size: 13px;
+    min-height: 18px;
+    margin-top: 6px;
+}
+
+@media (max-width: 600px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contactMe-section,
+    .form-section {
+        width: 100%;
+        max-width: 420px;
+        box-sizing: border-box;
+    }
+
+    .form-section {
+        margin: 20px 0;
+    }
+
+    p,
+    li {
+        text-align: left;
+        padding: 0 16px;
+    }
+
+    .contactMe-section {
+        padding: 0;
+    }
+
+}

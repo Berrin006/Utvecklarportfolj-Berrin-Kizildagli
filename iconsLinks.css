@@ -1,0 +1,47 @@
+/* --- LÄNKAR / IKONER --- */
+.link-section {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.link-section a {
+    color: black;
+    font-size: 30px;
+    transition: color 0.3s ease;
+}
+
+
+.link-section a .fa-linkedin:hover,
+.link-section a .fa-square-instagram:hover,
+.link-section a .fa-github:hover,
+.link-section a .fa-file:hover,
+.link-section a .fa-address-book:hover {
+    color: grey;
+}
+
+
+/* --- SKILLS IKONER --- */
+.skills-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 10px;
+}
+
+.skill-item {
+    text-align: center;
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+.skills-icons img {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 5px auto;
+    border-radius: 0;
+    object-fit: contain;
+}
