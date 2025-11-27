@@ -22,34 +22,30 @@
 }
 
 
-
-
-
 /* --- SKILLS IKONER --- */
 
 .skills-icons {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 25px;
+    flex-wrap: wrap;
     max-width: 800px;
     margin: 20px auto;
     padding: 0 10px;
 }
 
-
-
 .skill-item {
-    text-align: center;
-    width: 80px;
-    margin-bottom: 10px;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-
-
 .skills-icons img {
-    width: 50px;
-    height: 50px;
-    margin: 0 auto 5px auto;
-    border-radius: 0;
+    width: 100%;
+    height: 100%;
     object-fit: contain;
+    display: block;
+    border-radius: 0;
 }
