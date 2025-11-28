@@ -1,15 +1,16 @@
-/* --- FOOTER --- */
+/* 6. FOOTER OCH KONTAKTFORMULÄR */
+
 footer {
     padding: 40px 20px;
     color: #222;
-    background-color: #e0e0e0; 
+    background-color: #e0e0e0;
 }
 
 .footer-content {
     display: flex;
     justify-content: center;
-    align-items: flex-start;   
-    gap: 50px;                 
+    align-items: flex-start;
+    gap: 50px;
     max-width: 1000px;
     margin: 0 auto;
     flex-wrap: wrap;
@@ -40,7 +41,7 @@ footer {
 
 .contactMe-section a:hover,
 .contactMe-section a:focus {
-    color: #0077B5; 
+    color: #0077B5;
 }
 
 .form-section {
@@ -89,19 +90,4 @@ button[type=submit]:focus {
     font-size: 13px;
     min-height: 18px;
     margin-top: 6px;
-}
-
-/* --- Footer Responsiv --- */
-@media (max-width: 600px) {
-    .footer-content {
-        flex-direction: column;
-        align-items: center;
-        gap: 30px;
-    }
-
-    p,
-    li {
-        text-align: left;
-        padding: 0 16px;
-    }
 }

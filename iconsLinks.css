@@ -1,10 +1,11 @@
-/* --- LÄNKAR / IKONER --- */
+/* 3. IKONER / SOCIALA LÄNKAR */
 
 .link-section {
     display: flex;
     justify-content: center;
     gap: 10px;
     margin-bottom: 30px;
+    padding: 0 10px;
 }
 
 .link-section a {
@@ -19,118 +20,4 @@
 .link-section a .fa-file:hover,
 .link-section a .fa-address-book:hover {
     color: grey;
-}
-
-
-/* --- ABOUT SECTION --- */
-.about-section {
-    padding: 80px 20px;
-    text-align: center;
-    border-radius: 12px;
-    max-width: 1000px;
-    margin: 60px auto;
-    background-color: #ffffff; 
-}
-
-.about-section h2 {
-    font-size: 28px;
-    margin-bottom: 25px;
-    color: #333;
-    letter-spacing: 2px;
-    position: relative;
-}
-
-.about-section h2::after {
-    content: "";
-    display: block;
-    width: 70px;
-    height: 3px;
-    background: #ff6f61; 
-    margin: 12px auto 0;
-}
-
-.about-section p {
-    font-size: 18px;
-    color: #555;
-    max-width: 750px;
-    margin: 0 auto 40px;
-    line-height: 1.6;
-}
-
-
-/* --- Skills --- */
-.skills-icons {
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-    flex-wrap: wrap;
-    margin: 0 auto 30px;
-}
-
-.skill-item {
-    width: 80px;
-    height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    border-radius: 15px;
-    background: #fff;
-    transition: transform 0.3s ease;
-}
-
-.skill-item:hover {
-    transform: translateY(-5px);
-}
-
-.skills-icons img {
-    width: 60%;
-    height: 60%;
-    object-fit: contain;
-}
-
-.skill-list {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 12px;
-    margin-top: 25px;
-}
-
-.skill-list span {
-    background: #ff6f61;
-    color: white;
-    padding: 6px 16px;
-    border-radius: 25px;
-    font-size: 0.95em;
-    cursor: pointer;
-}
-
-/* --- Links & Projects --- */
-.about-section a {
-    color: #ff6f61;
-    text-decoration: none;
-    font-weight: 600;
-    transition: color 0.3s ease;
-}
-
-.about-section a:hover,
-.about-section a:focus {
-    color: #e55b50;
-}
-
-/* --- Responsive --- */
-@media (max-width: 768px) {
-    .skills-icons {
-        gap: 15px;
-    }
-
-    .skill-item {
-        width: 65px;
-        height: 65px;
-    }
-
-    .about-section p {
-        font-size: 16px;
-    }
 }

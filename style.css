@@ -1,7 +1,7 @@
-/* --- GLOBAL OCH TYPOGRAFI --- */
+/* 1. GLOBAL STILAR OCH TYPOGRAFI */
+
 html {
-    scroll-behavior: smooth;
-    /* mjuk scroll för ankar-länkar */
+    scroll-behavior: smooth; 
 }
 
 body {
@@ -31,3 +31,6 @@ img {
 .MyName {
     text-align: center;
 }
+
+
+

@@ -1,0 +1,103 @@
+
+/* 7. RESPONSIV DESIGN (MEDIA QUERIES)*/
+
+@media (max-width: 768px) {
+    /* Globalt */
+    main {
+        padding: 10px;
+    }
+
+    .MyName {
+        font-size: 2em;
+    }
+
+    /* About Sektion */
+    .about-section {
+        padding: 40px 15px;
+        margin: 30px auto;
+    }
+
+    .about-section h2 {
+        font-size: 24px;
+    }
+    
+    .about-section p {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+
+    /* Skills */
+    .skills-icons {
+        gap: 15px;
+    }
+
+    .skill-item {
+        width: 65px;
+        height: 65px;
+    }
+}
+
+@media (max-width: 600px) {
+    /* Navbar */
+    nav {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    nav a {
+        margin: 5px 0;
+        padding: 8px 0;
+        border-bottom: 1px solid #c0c0c0;
+        width: 100%;
+    }
+
+    nav a:last-child {
+        border-bottom: none;
+    }
+    
+    /* Ikoner */
+    .link-section a {
+        font-size: 26px;
+    }
+
+    /* Footer Responsiv */
+    footer {
+        padding: 30px 15px;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .contactMe-section,
+    .form-section {
+        width: 100%;
+        max-width: 400px;
+        min-width: unset;
+        text-align: center;
+    }
+    
+    .contactMe-section ul {
+        text-align: center;
+    }
+
+    p, li {
+        padding: 0;
+        text-align: left;
+    }
+
+    .form-section {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Skills Ikoner */
+    .skill-item {
+        width: 50px;
+        height: 50px;
+    }
+}

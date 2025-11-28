@@ -1,0 +1,53 @@
+/* 5. SKILLS / KUNSKAPER */
+
+.skills-icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+}
+
+.skill-item {
+    margin: 5px;
+    padding: 5px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.skill-item:hover {
+    background-color: lightgray;
+    border-radius: 10%;
+}
+
+.skills-icons img {
+    max-width: 90%;
+    max-height: 90%;
+    height: auto;
+    width: auto;
+    border-radius: 0;
+}
+
+.skill-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.skill-list span {
+    background: gray;
+    color: white;
+    padding: 6px 16px;
+    border-radius: 25px;
+    font-size: 0.95em;
+    cursor: pointer;
+    transition: background-color 1s;
+}
+
+.skill-list span:hover {
+    background-color: darkgray;
+}
