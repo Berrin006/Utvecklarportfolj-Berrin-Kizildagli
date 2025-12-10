@@ -1,0 +1,75 @@
+#form-section {
+    padding: 40px 20px;
+    background-color: #F5F5F5;
+    display: flex;
+    justify-content: center;
+}
+
+.form-section {
+    max-width: 500px;
+    width: 100%;
+    background-color: gray;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#register-heading {
+    text-align: center;
+    color: #333;
+    margin-bottom: 25px;
+    font-size: 2em;
+}
+
+.container label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+.container input[type=text],
+.container input[type=email],
+.container textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 6px 0 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.container input:focus,
+.container textarea:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.field-error {
+    color: red;
+    font-size: 0.9em;
+    margin-top: -5px;
+    margin-bottom: 10px;
+}
+
+.registerbtn {
+    background-color: green;
+    color: white;
+    padding: 14px 20px;
+    margin: 25px 0 10px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    border-radius: 4px;
+    font-size: 18px;
+    transition: opacity 0.3s ease;
+}
+
+.registerbtn:hover {
+    opacity: 1;
+}

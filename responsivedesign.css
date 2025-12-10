@@ -1,7 +1,7 @@
-
 /* 7. RESPONSIV DESIGN (MEDIA QUERIES)*/
 
 @media (max-width: 768px) {
+
     /* Globalt */
     main {
         padding: 10px;
@@ -20,7 +20,7 @@
     .about-section h2 {
         font-size: 24px;
     }
-    
+
     .about-section p {
         font-size: 16px;
         margin-bottom: 30px;
@@ -35,9 +35,56 @@
         width: 65px;
         height: 65px;
     }
+
+    /* Väder-widget */
+    .weather-box {
+        position: static;
+        margin: 20px auto;
+        width: 90%;
+        max-width: 400px;
+    }
+
+    .dropdown {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .dropdown-content {
+        position: relative;
+        display: none;
+        min-width: unset;
+        width: 100%;
+        left: 0;
+        right: 0;
+        border-radius: 0;
+        margin-top: 10px;
+    }
+
+    .dropbtn {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .project-item {
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+
+    .project-content {
+        width: calc(100% - 350px);
+        order: 2;
+    }
+
+    .project-image-container {
+        margin-bottom: 0;
+        order: 1;
+    }
 }
 
+
 @media (max-width: 600px) {
+
     /* Navbar */
     nav {
         display: flex;
@@ -55,46 +102,30 @@
     nav a:last-child {
         border-bottom: none;
     }
-    
+
     /* Ikoner */
     .link-section a {
         font-size: 26px;
     }
 
     /* Footer Responsiv */
-    footer {
-        padding: 30px 15px;
-    }
-    
-    .footer-content {
-        flex-direction: column;
-        align-items: center;
-        gap: 30px;
+    .form-section {
+        padding: 20px;
     }
 
-    .contactMe-section,
-    .form-section {
-        width: 100%;
-        max-width: 400px;
-        min-width: unset;
-        text-align: center;
+    .registerbtn {
+        font-size: 16px;
     }
-    
+
     .contactMe-section ul {
-        text-align: center;
-    }
-
-    p, li {
-        padding: 0;
-        text-align: left;
-    }
-
-    .form-section {
-        padding: 15px;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
     }
 }
 
 @media (max-width: 480px) {
+
     /* Skills Ikoner */
     .skill-item {
         width: 50px;

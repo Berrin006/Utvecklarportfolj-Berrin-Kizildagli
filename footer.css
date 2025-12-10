@@ -1,93 +1,42 @@
-/* 6. FOOTER OCH KONTAKTFORMULÄR */
-
 footer {
-    padding: 40px 20px;
-    color: #222;
-    background-color: #e0e0e0;
+    background-color: #333;
+    color: white;
+    padding: 10px 0px;
+    text-align: center;
 }
 
 .footer-content {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 50px;
     max-width: 1000px;
     margin: 0 auto;
-    flex-wrap: wrap;
 }
 
-.contactMe-section,
-.form-section {
-    flex: 1 1 300px;
-    min-width: 280px;
-    text-align: left;
+.contactMe-section {
+    padding: 5px 0;
 }
 
 .contactMe-section ul {
-    list-style: none;
+    list-style-type: none;
     padding: 0;
-    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
 }
 
-.contactMe-section li {
-    margin-bottom: 10px;
-}
-
-.contactMe-section a {
-    color: #222;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.contactMe-section a:hover,
-.contactMe-section a:focus {
-    color: #0077B5;
-}
-
-.form-section {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 6px;
-}
-
-label {
-    display: block;
-    margin-bottom: 6px;
-    font-weight: 600;
-}
-
-input[type=text],
-input[type=email],
-input[type=password],
-select {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #222;
-    border-radius: 4px;
-    margin-bottom: 10px;
-    box-sizing: border-box;
-}
-
-button[type=submit] {
-    width: 100%;
-    background-color: #4CAF50;
-    padding: 12px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
+.contactMe-section ul li a {
     color: white;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
 }
 
-button[type=submit]:hover,
-button[type=submit]:focus {
-    background-color: #45a049;
+.contactMe-section ul li a:hover {
+    color: #007bff;
 }
 
-.field-error {
-    font-size: 13px;
-    min-height: 18px;
-    margin-top: 6px;
+.contactMe-section ul li a .fa-brands {
+    margin-right: 8px;
+    font-size: 1.5em;
 }
+

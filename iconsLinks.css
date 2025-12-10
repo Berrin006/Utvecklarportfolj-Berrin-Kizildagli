@@ -8,7 +8,7 @@
     padding: 0 10px;
 }
 
-.link-section a {
+.link-section a:not(.cv-download-link-wrapper) {
     color: black;
     font-size: 30px;
     transition: color 0.3s ease;
@@ -17,7 +17,24 @@
 .link-section a .fa-linkedin:hover,
 .link-section a .fa-square-instagram:hover,
 .link-section a .fa-github:hover,
-.link-section a .fa-file:hover,
 .link-section a .fa-address-book:hover {
-    color: grey;
+    color: gray;
+}
+
+.cv-download-btn {
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    padding: 7px 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    height: 30px;
+    line-height: 16px;
+}
+
+.cv-download-btn:hover {
+    background-color: gray;
 }

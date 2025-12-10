@@ -12,28 +12,39 @@
     <link rel="stylesheet" href="skills.css">
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="responsivedesign.css">
+    <link rel="stylesheet" href="weather.css">
+    <link rel="stylesheet" href="form.css">
     <script src="https://kit.fontawesome.com/9460d60ee2.js" crossorigin="anonymous" defer></script>
-
-    <script src="app.js" defer></script>
 </head>
 
 <body>
     <header>
         <nav>
             <a href="index.html">Home</a>
-            <a href="Berrin Kizildagli CV 20251010.pdf" target="_blank" rel="noopener">CV</a>
             <a href="#about">About Me</a>
             <a href="#contact">Contact</a>
+
+            <div class="dropdown">
+                <button class="dropbtn">
+                    Aktuellt Väder
+                    <span class="arrow-down">▼</span>
+                </button>
+
+                <div class="dropdown-content">
+                    <div class="card">
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
 
     <main>
-        <img src="profil_bild.png" alt="Profilbild - Berrin Kizildagli" title="It's Me Hi">
+        <img src="profilbil3.png" alt="Porträttbild av Berrin Kizildagli" title="It's Me Hi!">
         <h1 class="MyName">Berrin Kizildagli</h1>
 
         <div class="link-section">
-            <a href="Berrin Kizildagli CV 20251010.pdf" target="_blank" title="CV">
-                <i class="fa-solid fa-file"></i>
+            <a href="Berrin Kizildagli Cv 20251128.pdf" target="_blank" title="CV-fil" class="cv-download-link-wrapper">
+                <button type="button" class="cv-download-btn">CV</button>
             </a>
 
             <a href="https://www.instagram.com/berrin.foto/" target="_blank" title="Instagram">
@@ -53,115 +64,136 @@
             </a>
         </div>
 
-        <!-- ABOUT SECTION -->
         <section id="about" class="about-section">
-            <h2 id="about-heading">ABOUT ME</h2>
+            <h2 id="about-heading">ABOUT ME 👩🏻</h2>
             <p>
-                I’m Berrin Kizildagli, 19 years old, and I graduated in June 2025 from the Technology program with a
-                specialization in Information and Media Technology. Through courses like Programming 1–2, Web
-                Development 1 and Computer & Network Technology, I gained both practical and
-                theoretical experience.
+                I am Berrin Kizildagli, a 19-year-old IT student with nearly three years of experience from studies and
+                practical projects. I am currently studying Web Development in Stockholm. I have skills in
+                programming, web development, and computer and network technology, and I am motivated to contribute to
+                efficient technical solutions.
             </p>
+        </section>
 
-            <h2>Skills</h2>
+        <section id="skills" class="about-section">
+            <h2>Skills 🛠️</h2>
             <div class="skills-icons">
                 <div class="skill-item">
-                    <img src="C++_Logo.svg.png" alt="C++">
+                    <img src="C++_Logo.svg.png" alt="C++ logo">
                 </div>
                 <div class="skill-item">
-                    <img src="Csharp_Logo.png" alt="C#">
+                    <img src="Csharp_Logo.png" alt="C# logo">
                 </div>
                 <div class="skill-item">
-                    <img src="java.png" alt="Java">
+                    <img src="java.png" alt="Java logo">
                 </div>
                 <div class="skill-item">
-                    <img src="javascript.png" alt="JavaScript">
+                    <img src="javascript.png" alt="JavaScript logo">
                 </div>
                 <div class="skill-item">
-                    <img src="Python-logo.png" alt="Python">
+                    <img src="Python-logo.png" alt="Python logo">
                 </div>
                 <div class="skill-item">
-                    <img src="html5.png" alt="HTML5">
+                    <img src="html5.png" alt="HTML5 logo">
                 </div>
                 <div class="skill-item">
-                    <img src="CSS3_logo.png" alt="CSS3">
+                    <img src="CSS3_logo.png" alt="CSS3 logo">
                 </div>
             </div>
 
             <div class="skill-list">
-                <span>ASP.NET/.NET</span>
-                <span>Frontend Development</span>
+                <span>.NET</span>
                 <span>Git & Version Control</span>
-                <span>Databases & SQL</span>
                 <span>Cisco Networking Academy</span>
             </div>
+        </section>
 
-            <h2 class="projects">Projects</h2>
-            <p>
-                <a href="https://github.com/Berrin006/ProductApp" target="_blank" title="Link to GitHub">GitHub Project: Produkt List</a>
-            </p>
+        <section id="projects" class="about-section">
+            <h2 class="projects">Projects 🗂️</h2>
 
-            <h2 class="Reference">Reference</h2>
-            <p>Morgan Malm: High school teacher, my mentor.</p>
+            <div class="project-item">
+                <h3>Produkt List</h3>
+                <p>
+                    <img src="projectlistlinkbild.png" alt="lankbild" title="no link">
+                    <a href="https://github.com/Berrin006/ProductApp" target="_blank" title="Link to GitHub">GitHub
+                        (Kod)</a>
+                </p>
+            </div>
+
+            <div class="project-item">
+                <h3>SystemMentorZoo</h3>
+                <p>
+                    <a href="https://berrin006.github.io/SystemMentorZoo/" target="_blank"
+                        title="Live Demo"><img src="systemmentorzoolinkbild.png"
+                            alt="lankbild"></a>
+                    <a href="https://github.com/Berrin006/SystemMentorZoo" target="_blank" title="Link to GitHub">GitHub
+                        (Kod)</a>
+                </p>
+            </div>
+        </section>
+
+        <section id="references" class="about-section">
+            <h2 class="Reference">Reference 🤝🏻</h2>
+            <blockquote cite="Morgan Malm, High School Teacher">
+                <p>"Berrin är en exceptionellt driven och snabblärd student som alltid levererar projekt med hög
+                    kvalitet och stor noggrannhet. Hon är en fantastisk tillgång i alla team."</p>
+                <p class="person">Morgan Malm, Gymnasielärare & Mentor</p>
+            </blockquote>
         </section>
 
     </main>
 
-    <footer id="contact">
-        <div class="footer-content">
+    <section id="form-section">
+        <div class="form-section" id="contact">
+            <h2 id="register-heading">Contact Form</h2>
+            <form id="contactForm" action="https://formspree.io/f/mrbnyqde" method="POST">
+                <div class="container">
+                    <label for="fname"><b>First Name</b></label>
+                    <input type="text" placeholder="Enter First Name" name="fname" id="fname" required>
+                    <p id="fnameError" class="field-error"></p>
 
+                    <label for="lname"><b>Last Name</b></label>
+                    <input type="text" placeholder="Enter Last Name" name="lname" id="lname" required>
+                    <p id="lnameError" class="field-error"></p> <label for="email"><b>Email</b></label>
+                    <input type="email" placeholder="Enter Email" name="email" id="email" required>
+                    <p id="emailError" class="field-error"></p>
+
+                    <label for="message"><b>Meddelande/Message</b></label>
+                    <textarea id="message" name="message" placeholder="Skriv ditt meddelande här..." rows="5"
+                        required></textarea>
+                    <p id="messageError" class="field-error"></p> <button type="submit"
+                        class="registerbtn">Contact</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
             <div class="contactMe-section">
-                <h2 id="contact-heading">CONTACT ME</h2>
                 <ul>
                     <li>
-                        <a href="https://www.instagram.com/berrin.foto/" target="_blank">
+                        <a href="https://www.instagram.com/berrin.foto/" target="_blank" aria-label="Instagram profil">
                             <i class="fa-brands fa-instagram"></i> @berrin.foto
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.linkedin.com/in/berrin-kizildagli-10ba9b201/" target="_blank">
+                        <a href="https://www.linkedin.com/in/berrin-kizildagli-10ba9b201/" target="_blank"
+                            aria-label="LinkedIn profil">
                             <i class="fa-brands fa-linkedin"></i> LinkedIn
                         </a>
                     </li>
                     <li>
-                        <a href="https://github.com/Berrin006" target="_blank">
+                        <a href="https://github.com/Berrin006" target="_blank" aria-label="GitHub profil">
                             <i class="fa-brands fa-github"></i> GitHub
                         </a>
                     </li>
                 </ul>
             </div>
-
-            <div class="form-section">
-                <h2 id="register-heading">Register</h2>
-                <form id="registerForm" action="https://formshow.systementor.se/">
-                    <div class="container">
-                        <label for="fname"><b>First Name</b></label>
-                        <input type="text" placeholder="Enter First Name" name="fname" id="fname" required>
-
-                        <label for="lname"><b>Last Name</b></label>
-                        <input type="text" placeholder="Enter Last Name" name="lname" id="lname" required>
-
-                        <label for="email"><b>Email</b></label>
-                        <input type="email" placeholder="Enter Email" name="email" id="email" required>
-
-                        <label for="psw"><b>Password</b></label>
-                        <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
-
-                        <label for="psw-repeat"><b>Confirm Password</b></label>
-                        <input type="password" placeholder="Confirm Password" name="psw-repeat" id="psw-repeat"
-                            required>
-
-                        <button type="submit" class="registerbtn">Contact</button>
-                    </div>
-                </form>
-            </div>
-
+            <p>@ 2025</p>
         </div>
     </footer>
 
-
+    <script src="app.js"></script>
 </body>
-
-
 
 </html>

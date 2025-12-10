@@ -3,7 +3,7 @@
 .skills-icons {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
 }
 
 .skill-item {
@@ -14,11 +14,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
 }
 
 .skill-item:hover {
-    background-color: lightgray;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
     border-radius: 10%;
 }
 
@@ -28,6 +27,12 @@
     height: auto;
     width: auto;
     border-radius: 0;
+    margin: 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+.skills-icons img:hover {
+    transform: translateY(-10px);
 }
 
 .skill-list {
@@ -39,15 +44,66 @@
 }
 
 .skill-list span {
-    background: gray;
+    background: #212529;
     color: white;
-    padding: 6px 16px;
-    border-radius: 25px;
+    padding: 8px 18px;
+    border-radius: 20px;
     font-size: 0.95em;
-    cursor: pointer;
-    transition: background-color 1s;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid #212529;
 }
 
 .skill-list span:hover {
-    background-color: darkgray;
+    background-color: transparent;
+    color: #212529;
+    transform: translateY(-2px);
 }
+
+#skills {
+    background-color: #F0F0F0;
+}
+
+.project-item {
+    padding: 10px;
+    margin: 20px auto;
+    max-width: 700px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.project-item h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin: 0;
+    padding-right: 15px;
+}
+
+.project-item p {
+    display: flex;
+    gap: 15px;
+    margin: 0;
+}
+
+.project-item p a {
+    color: darkslategray;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    width: auto;
+}
+
+.project-item p a:hover {
+   color: #457070;
+}
+
+.project-item p a img {
+    width: auto;
+    display: inline-block;
+}
+
