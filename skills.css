@@ -115,3 +115,10 @@
     background: #f1f5f9;
     color: #0284c7;
 }
+
+.project-links a img.book-img {
+    width: 65px;   
+    height: 90px;  
+    object-fit: contain;
+    background: #ffffff; 
+}

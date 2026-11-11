@@ -1,4 +1,3 @@
-/* Universell nollställning */
 * {
     margin: 0;
     padding: 0;
@@ -22,7 +21,6 @@ body {
     text-align: center;
 }
 
-/* Heltäckande hero-sektion */
 .hero-container {
     height: 100vh;
     width: 100%;
@@ -32,11 +30,9 @@ body {
     justify-content: center;
     position: relative;
     
-    /* Inga konstiga marginaler eller paddingar som skapar glipor */
     margin-top: 0; 
     padding-top: 0; 
 
-    /* Luft på vänster sida för din text */
     padding-left: 8%; 
 
     background-image: url('webdevelopment.jpg');
@@ -45,7 +41,6 @@ body {
     background-repeat: no-repeat;
 }
 
-/* Det mörka filtret */
 .hero-container::before {
     content: '';
     position: absolute;
