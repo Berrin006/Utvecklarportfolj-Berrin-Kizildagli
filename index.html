@@ -23,45 +23,39 @@
   <body>
     <header>
       <nav>
-        <a href="index.html">Home</a>
-        <a href="#about">About Me</a>
-        <a href="#contact">Contact</a>
-
-        <div class="dropdown">
-          <button class="dropbtn">
-            Live Weather
-            <span class="arrow-down">▼</span>
-          </button>
-
-          <div class="dropdown-content">
-            <div class="card"></div>
-          </div>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="#about">About Me</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
         </div>
+
+        
       </nav>
     </header>
 
     <main>
-      <img
-        src="ben.jpeg"
-        alt="Porträttbild av Berrin Kizildagli"
-        title="It's Me Hi!"
-      />
-      <h1 class="MyName">Berrin Kizildagli</h1>
+      <div class="hero-container">
+        <h1 class="MyName">Berrin Kizildagli</h1>
+        <p class="hero-subtitle">Full-Stack Web Developer & .NET Enthusiast</p>
+      </div>
 
       <div class="link-section">
         <a
-          href="Berrin_Kizildagli_CV.pdf"
+          href="BERRIN-KIZILDAGLI-CV.pdf"
           target="_blank"
           title="CV"
           class="cv-download-link-wrapper"
         >
-          <button type="button" class="cv-download-btn">CV</button>
+          <button type="button" class="cv-download-btn"><i class="fa-solid fa-file-arrow-down"></i> CV</button>
         </a>
 
         <a
           href="https://www.instagram.com/berkiz14/"
           target="_blank"
           title="Instagram"
+          aria-label="Instagram"
         >
           <i class="fa-brands fa-square-instagram"></i>
         </a>
@@ -70,15 +64,16 @@
           href="https://www.linkedin.com/in/berrin-kizildagli-10ba9b201/"
           target="_blank"
           title="Linkedin"
+          aria-label="LinkedIn"
         >
           <i class="fa-brands fa-linkedin"></i>
         </a>
 
-        <a href="index.html" title="Portfolio">
+        <a href="index.html" title="Portfolio" aria-label="Portfolio">
           <i class="fa-solid fa-address-book"></i>
         </a>
 
-        <a href="https://github.com/Berrin006" target="_blank" title="GitHub">
+        <a href="https://github.com/Berrin006" target="_blank" title="GitHub" aria-label="GitHub">
           <i class="fa-brands fa-github"></i>
         </a>
       </div>
@@ -91,97 +86,79 @@
           I have built a solid foundation in programming, object-oriented design (.NET), and network technology. 
           I am highly motivated to write clean code and contribute to efficient, scalable technical solutions.
         </p>
+            <img
+              src="ben.jpeg"
+              alt="Porträttbild av Berrin Kizildagli"
+              title="It's Me Hi!"
+              class="profile-img"
+          />
       </section>
 
       <section id="skills" class="about-section">
         <h2>Skills 🛠️</h2>
         <div class="skills-icons">
-          <div class="skill-item">
-            <img src="C++_Logo.svg.png" alt="C++ logo" />
-          </div>
-          <div class="skill-item">
-            <img src="Csharp_Logo.png" alt="C# logo" />
-          </div>
-          <div class="skill-item">
-            <img src="java.png" alt="Java logo" />
-          </div>
-          <div class="skill-item">
-            <img src="javascript.png" alt="JavaScript logo" />
-          </div>
-          <div class="skill-item">
-            <img src="Python-logo.png" alt="Python logo" />
-          </div>
-          <div class="skill-item">
-            <img src="html5.png" alt="HTML5 logo" />
-          </div>
-          <div class="skill-item">
-            <img src="CSS3_logo.png" alt="CSS3 logo" />
-          </div>
-          <div class="skill-item">
-            <img src="github.png" alt="GitHub logo" />
-          </div>
-          <div class="skill-item">
-            <img src=".NET.png" alt=".NET logo" />
-          </div>
-          <div class="skill-item">
-            <img src="cisco_logo_large.png" alt="Cisco logo" />
-          </div>
-          <div class="skill-item">
-            <img src="Azure SQL Database.png" alt="SQL logo" />
-          </div>
-          <div class="skill-item">
-            <img src="cmslogo.png" alt="SQL logo" />
-          </div>
-          <div class="skill-item">
-            <img src="umbracologo.png" alt="SQL logo" />
-          </div>
-          <div class="skill-item">
-            <img src="optimizely.png" alt="SQL logo" />
-          </div>
+          <div class="skill-item"><img src="C++_Logo.svg.png" alt="C++ logo" /></div>
+          <div class="skill-item"><img src="Csharp_Logo.png" alt="C# logo" /></div>
+          <div class="skill-item"><img src="java.png" alt="Java logo" /></div>
+          <div class="skill-item"><img src="javascript.png" alt="JavaScript logo" /></div>
+          <div class="skill-item"><img src="Python-logo.png" alt="Python logo" /></div>
+          <div class="skill-item"><img src="html5.png" alt="HTML5 logo" /></div>
+          <div class="skill-item"><img src="CSS3_logo.png" alt="CSS3 logo" /></div>
+          <div class="skill-item"><img src="github.png" alt="GitHub logo" /></div>
+          <div class="skill-item"><img src="NET.png" alt=".NET logo" /></div>
+          <div class="skill-item"><img src="cisco_logo_large.png" alt="Cisco logo" /></div>
+          <div class="skill-item"><img src="Azure SQL Database.png" alt="SQL logo" /></div>
+          <div class="skill-item"><img src="cmslogo.png" alt="CMS logo" /></div>
+          <div class="skill-item"><img src="umbracologo.png" alt="Umbraco logo" /></div>
+          <div class="skill-item"><img src="optimizely.png" alt="Optimizely logo" /></div>
         </div>
-
       </section>
 
       <section id="projects" class="about-section">
         <h2 class="projects">Projects 🗂️</h2>
 
-        <!-- Produkt List -->
-        <div class="project-item">
-          <h3>Produkt List</h3>
-          <p>
-            <a href="https://github.com/Berrin006/ProductApp" target="_blank" title="Link to GitHub">
-              <img src="projectlistlinkbild.png" alt="lankbild"/>
-            </a>
-            <a href="https://github.com/Berrin006/ProductApp" target="_blank" title="Link to GitHub">
-              <img src="github.png" alt="GitHub logo" style="width: 30px; height: 30px;" />
-            </a>
-          </p>
-        </div>
+        <div class="project-card-grid">
+          <!-- Produkt List -->
+          <div class="project-item">
+            <h3>Produkt List</h3>
+            <p class="project-desc">A modern product list application built to manage items cleanly and efficiently.</p>
+            <div class="project-links">
+              <a href="https://github.com/Berrin006/ProductApp" target="_blank" title="View Preview">
+                <img src="projectlistlinkbild.png" alt="ProductApp preview"/>
+              </a>
+              <a href="https://github.com/Berrin006/ProductApp" target="_blank" title="Link to GitHub">
+                <i class="fa-brands fa-github"></i> Source Code
+              </a>
+            </div>
+          </div>
 
-        <!-- SystemMentorZoo -->
-        <div class="project-item">
-          <h3>SystemMentorZoo</h3>
-          <p>
-            <a href="https://berrin006.github.io/SystemMentorZoo/" target="_blank" title="Live Demo">
-              <img src="systemmentorzoolinkbild.png" alt="lankbild"/>
-            </a>
-            <a href="https://github.com/Berr006/SystemMentorZoo" target="_blank" title="Link to GitHub">
-              <img src="github.png" alt="GitHub logo" style="width: 30px; height: 30px;" />
-            </a>
-          </p>
-        </div>
+          <!-- SystemMentorZoo -->
+          <div class="project-item">
+            <h3>SystemMentorZoo</h3>
+            <p class="project-desc">An interactive zoo management web application demonstrating robust frontend logic.</p>
+            <div class="project-links">
+              <a href="https://github.com/Berrin006/SystemMentorZoo" target="_blank" title="Live Demo">
+                <img src="systemmentorzoolinkbild.png" alt="SystemMentorZoo preview"/>
+              </a>
+              <a href="https://github.com/Berrin006/SystemMentorZoo" target="_blank" title="Link to GitHub">
+                <i class="fa-brands fa-github"></i> Source Code
+              </a>
+            </div>
+          </div>  
 
-        <!-- Core Fitness -->
-        <div class="project-item">
-          <h3>Core Fitness</h3>
-          <p>
-            <a href="https://corefitnessberrinkizildagli-fkgub5cbc6aefydp.swedencentral-01.azurewebsites.net" target="_blank" title="Live Demo">
-              <img src="corefitness.png" alt="lankbild"/>
-            </a>
-            <a href="https://github.com/Berrin006/CoreFitness-BerrinKizildagli" target="_blank" title="Link to GitHub">
-              <img src="github.png" alt="GitHub logo" style="width: 30px; height: 30px;"/>
-            </a>
-          </p>
+          <!-- Core Fitness -->
+          <div class="project-item">
+            <h3>Core Fitness</h3>
+            <p class="project-desc">A full-stack cloud-hosted fitness tracking web service deployed live via Azure.</p>
+            <div class="project-links">
+              <a href="https://corefitnessberrinkizildagli-fkgub5cbc6aefydp.swedencentral-01.azurewebsites.net" target="_blank" title="Live Demo">
+                <img src="corefitness.png" alt="Core Fitness preview"/>
+              </a>
+              <a href="https://github.com/Berrin006/CoreFitness-BerrinKizildagli" target="_blank" title="Link to GitHub">
+                <i class="fa-brands fa-github"></i> Source Code
+              </a>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -200,7 +177,7 @@
 
     <section id="form-section">
       <div class="form-section" id="contact">
-        <h2 id="register-heading">Contact Form</h2>
+        <h2 id="register-heading">Get in Touch</h2>
         <form
           id="contactForm"
           action="https://formspree.io/f/mrbnyqde"
@@ -226,6 +203,7 @@
               required
             />
             <p id="lnameError" class="field-error"></p>
+
             <label for="email"><b>Email</b></label>
             <input
               type="email"
@@ -245,7 +223,8 @@
               required
             ></textarea>
             <p id="messageError" class="field-error"></p>
-            <button type="submit" class="registerbtn">Contact</button>
+            
+            <button type="submit" class="registerbtn">Send Message</button>
           </div>
         </form>
       </div>
@@ -256,35 +235,23 @@
         <div class="contactMe-section">
           <ul>
             <li>
-              <a
-                href="https://www.instagram.com/berkiz14/"
-                target="_blank"
-                aria-label="Instagram profil"
-              >
+              <a href="https://www.instagram.com/berkiz14/" target="_blank" aria-label="Instagram profile">
                 <i class="fa-brands fa-instagram"></i> @berkiz14
               </a>
             </li>
             <li>
-              <a
-                href="https://www.linkedin.com/in/berrin-kizildagli-10ba9b201/"
-                target="_blank"
-                aria-label="LinkedIn profil"
-              >
+              <a href="https://www.linkedin.com/in/berrin-kizildagli-10ba9b201/" target="_blank" aria-label="LinkedIn profile">
                 <i class="fa-brands fa-linkedin"></i> LinkedIn
               </a>
             </li>
             <li>
-              <a
-                href="https://github.com/Berrin006"
-                target="_blank"
-                aria-label="GitHub profil"
-              >
+              <a href="https://github.com/Berrin006" target="_blank" aria-label="GitHub profile">
                 <i class="fa-brands fa-github"></i> GitHub
               </a>
             </li>
           </ul>
         </div>
-        <p>@ 2026</p>
+        <p>&copy; 2026 Berrin Kizildagli. All rights reserved.</p>
       </div>
     </footer>
 
