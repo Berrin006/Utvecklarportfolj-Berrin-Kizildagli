@@ -1,32 +1,36 @@
 #form-section {
     padding: 40px 20px;
-    background-color: #F5F5F5;
+    background-color: #f1f5f9;
     display: flex;
     justify-content: center;
 }
 
 .form-section {
-    max-width: 500px;
+    max-width: 550px;
     width: 100%;
-    background-color: gray;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e2e8f0;
+    text-align: left;
 }
 
 #register-heading {
     text-align: center;
-    color: #333;
+    color: #1e293b;
     margin-bottom: 25px;
-    font-size: 2em;
+    font-size: 1.8rem;
+    font-weight: 700;
 }
 
 .container label {
     display: block;
     margin-top: 15px;
-    margin-bottom: 5px;
-    color: white;
-    font-weight: bold;
+    margin-bottom: 6px;
+    color: #334155;
+    font-weight: 600;
+    font-size: 0.95rem;
 }
 
 .container input[type=text],
@@ -34,12 +38,15 @@
 .container textarea {
     width: 100%;
     padding: 12px;
-    margin: 6px 0 10px 0;
+    margin: 0;
     display: inline-block;
-    border: 1px solid #ccc;
+    border: 1px solid #cbd5e1;
     box-sizing: border-box;
-    border-radius: 4px;
-    font-size: 16px;
+    border-radius: 6px;
+    font-size: 15px;
+    background-color: #f8fafc;
+    color: #1e293b;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 textarea {
@@ -49,32 +56,34 @@ textarea {
 
 .container input:focus,
 .container textarea:focus {
-    border-color: #007bff;
+    border-color: #0284c7;
     outline: none;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    background-color: #ffffff;
+    box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.15);
 }
 
 .field-error {
-    color: red;
-    font-size: 0.9em;
-    margin-top: -5px;
+    color: #ef4444;
+    font-size: 0.85rem;
+    margin-top: 4px;
     margin-bottom: 10px;
+    font-weight: 500;
 }
 
 .registerbtn {
-    background-color: green;
+    background-color: #0f172a;
     color: white;
     padding: 14px 20px;
-    margin: 25px 0 10px 0;
+    margin: 20px 0 0 0;
     border: none;
     cursor: pointer;
     width: 100%;
-    opacity: 0.9;
-    border-radius: 4px;
-    font-size: 18px;
-    transition: opacity 0.3s ease;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
 .registerbtn:hover {
-    opacity: 1;
+    background-color: #334155;
 }

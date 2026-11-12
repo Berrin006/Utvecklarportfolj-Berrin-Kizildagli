@@ -1,8 +1,9 @@
 footer {
-    background-color: #333;
-    color: white;
-    padding: 10px 0px;
+    background-color: #0f172a;
+    color: #94a3b8;
+    padding: 30px 20px;
     text-align: center;
+    border-top: 1px solid #1e293b;
 }
 
 .footer-content {
@@ -11,7 +12,7 @@ footer {
 }
 
 .contactMe-section {
-    padding: 5px 0;
+    padding: 10px 0 20px 0;
 }
 
 .contactMe-section ul {
@@ -19,24 +20,31 @@ footer {
     padding: 0;
     display: flex;
     justify-content: center;
-    gap: 25px;
+    gap: 30px;
+    margin: 0;
 }
 
 .contactMe-section ul li a {
-    color: white;
+    color: #e2e8f0;
     text-decoration: none;
-    font-size: 1.1em;
-    transition: color 0.3s ease;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.2s ease;
     display: flex;
     align-items: center;
 }
 
 .contactMe-section ul li a:hover {
-    color: #007bff;
+    color: #38bdf8;
 }
 
 .contactMe-section ul li a .fa-brands {
     margin-right: 8px;
-    font-size: 1.5em;
+    font-size: 1.3em;
 }
 
+footer p {
+    font-size: 0.9rem;
+    margin-top: 15px;
+    color: #64748b;
+}

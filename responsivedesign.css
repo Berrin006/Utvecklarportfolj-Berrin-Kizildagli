@@ -1,34 +1,15 @@
-/* 7. RESPONSIV DESIGN (MEDIA QUERIES)*/
-
 @media (max-width: 768px) {
-
-    /* Globalt */
     main {
-        padding: 10px;
+        padding: 20px 10px;
     }
 
     .MyName {
-        font-size: 2em;
+        font-size: 2rem;
     }
 
-    /* About Sektion */
     .about-section {
-        padding: 40px 15px;
-        margin: 30px auto;
-    }
-
-    .about-section h2 {
-        font-size: 24px;
-    }
-
-    .about-section p {
-        font-size: 16px;
-        margin-bottom: 30px;
-    }
-
-    /* Skills */
-    .skills-icons {
-        gap: 15px;
+        padding: 30px 20px;
+        margin: 20px auto;
     }
 
     .skill-item {
@@ -36,99 +17,51 @@
         height: 65px;
     }
 
-    /* Väder-widget */
-    .weather-box {
-        position: static;
-        margin: 20px auto;
-        width: 90%;
-        max-width: 400px;
+    nav {
+        flex-direction: column;
+        gap: 12px;
+        padding: 12px;
     }
 
-    .dropdown {
-        display: block;
-        width: 100%;
-        text-align: center;
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 4px;
     }
 
     .dropdown-content {
-        position: relative;
-        display: none;
-        min-width: unset;
+        position: static;
         width: 100%;
-        left: 0;
-        right: 0;
-        border-radius: 0;
+        box-shadow: none;
         margin-top: 10px;
     }
 
-    .dropbtn {
+    .card {
         width: 100%;
-        padding: 10px 0;
-    }
-
-    .project-item {
-        justify-content: space-around;
-        align-items: flex-start;
-    }
-
-    .project-content {
-        width: calc(100% - 350px);
-        order: 2;
-    }
-
-    .project-image-container {
-        margin-bottom: 0;
-        order: 1;
+        box-sizing: border-box;
     }
 }
 
-
 @media (max-width: 600px) {
-
-    /* Navbar */
-    nav {
-        display: flex;
+    .nav-links {
         flex-direction: column;
-        padding: 10px 0;
+        width: 100%;
     }
 
     nav a {
-        margin: 5px 0;
         padding: 8px 0;
-        border-bottom: 1px solid #c0c0c0;
+        border-bottom: 1px solid #334155;
         width: 100%;
+        text-align: center;
     }
 
     nav a:last-child {
         border-bottom: none;
     }
 
-    /* Ikoner */
-    .link-section a {
-        font-size: 26px;
-    }
-
-    /* Footer Responsiv */
-    .form-section {
-        padding: 20px;
-    }
-
-    .registerbtn {
-        font-size: 16px;
-    }
-
     .contactMe-section ul {
         flex-direction: column;
-        gap: 10px;
+        gap: 12px;
         align-items: center;
-    }
-}
-
-@media (max-width: 480px) {
-
-    /* Skills Ikoner */
-    .skill-item {
-        width: 50px;
-        height: 50px;
     }
 }

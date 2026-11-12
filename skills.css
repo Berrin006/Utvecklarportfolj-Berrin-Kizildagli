@@ -1,109 +1,124 @@
-/* 5. SKILLS / KUNSKAPER */
-
 .skills-icons {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    gap: 16px;
 }
 
 .skill-item {
-    margin: 5px;
-    padding: 5px;
-    width: 100px;
-    height: 100px;
+    margin: 0;
+    padding: 10px;
+    width: 75px;
+    height: 75px;
     display: flex;
     justify-content: center;
     align-items: center;
+    background: #f8fafc;
+    border-radius: 10px;
+    border: 1px solid #e2e8f0;
+    transition: all 0.2s ease;
 }
 
 .skill-item:hover {
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-    border-radius: 10%;
+    background: #ffffff;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.08);
+    border-color: #cbd5e1;
+    transform: translateY(-4px);
 }
 
 .skills-icons img {
-    max-width: 90%;
-    max-height: 90%;
+    max-width: 80%;
+    max-height: 80%;
     height: auto;
     width: auto;
     border-radius: 0;
     margin: 0;
-    transition: transform 0.3s ease-in-out;
-}
-
-.skills-icons img:hover {
-    transform: translateY(-10px);
-}
-
-.skill-list {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 12px;
-    margin-top: 25px;
-}
-
-.skill-list span {
-    background: #212529;
-    color: white;
-    padding: 8px 18px;
-    border-radius: 20px;
-    font-size: 0.95em;
-    transition: all 0.3s ease-in-out;
-    border: 1px solid #212529;
-}
-
-.skill-list span:hover {
-    background-color: transparent;
-    color: #212529;
-    transform: translateY(-2px);
+    box-shadow: none;
+    border: none;
+    transition: transform 0.2s ease;
 }
 
 #skills {
-    background-color: #F0F0F0;
+    background-color: #ffffff;
+}
+
+.project-card-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 20px;
 }
 
 .project-item {
-    padding: 10px;
-    margin: 20px auto;
-    max-width: 700px;
+    padding: 20px;
+    background: #f8fafc;
+    border-radius: 10px;
+    border: 1px solid #e2e8f0;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    transition: border-color 0.2s ease;
+}
+
+.project-item:hover {
+    border-color: #cbd5e1;
 }
 
 .project-item h3 {
-    font-size: 1.5em;
-    color: #333;
+    font-size: 1.35em;
+    color: #1e293b;
     margin: 0;
-    padding-right: 15px;
 }
 
-.project-item p {
+.project-desc {
+    color: #64748b;
+    font-size: 0.95rem;
+    margin: 0;
+    text-align: left !important;
+}
+
+.project-links {
     display: flex;
-    gap: 15px;
-    margin: 0;
+    gap: 16px;
+    align-items: center;
+    width: 100%;
+    margin-top: 5px;
 }
 
-.project-item p a {
-    color: darkslategray;
+.project-links a img {
+    width: 120px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 1px solid #cbd5e1;
+    margin: 0;
+    box-shadow: none;
+}
+
+.project-links a:last-child {
+    color: #0f172a;
     text-decoration: none;
-    font-size: 1em;
-    font-weight: bold;
-    padding: 10px;
+    font-size: 0.95rem;
+    font-weight: 600;
     display: flex;
     align-items: center;
-    width: auto;
+    gap: 6px;
+    padding: 8px 12px;
+    background: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    transition: background 0.2s ease;
 }
 
-.project-item p a:hover {
-   color: #457070;
+.project-links a:last-child:hover {
+    background: #f1f5f9;
+    color: #0284c7;
 }
 
-.project-item p a img {
-    width: auto;
-    display: inline-block;
+.project-links a img.book-img {
+    width: 65px;   
+    height: 90px;  
+    object-fit: contain;
+    background: #ffffff; 
 }
-
