@@ -1,3 +1,4 @@
+/* Contact section and form card */
 #form-section {
     padding: clamp(3rem, 7vw, 5rem) 1.25rem;
     display: flex;
@@ -26,6 +27,7 @@
     text-align: left;
 }
 
+/* Form fields */
 .container label {
     display: block;
     margin: 1rem 0 0.4rem;
@@ -46,7 +48,10 @@
     border: 1px solid var(--color-card-border);
     border-radius: 0.7rem;
     font-size: 1rem;
-    transition: border-color var(--ease-standard), box-shadow var(--ease-standard), background var(--ease-standard);
+    transition:
+        border-color var(--ease-standard),
+        box-shadow var(--ease-standard),
+        background var(--ease-standard);
 }
 
 .container textarea {
@@ -67,6 +72,7 @@
     box-shadow: 0 0 0 4px rgba(223, 214, 174, 0.2);
 }
 
+/* Validation messages */
 .field-error {
     min-height: 0;
     margin: 0.3rem 0 0;
@@ -75,6 +81,7 @@
     font-weight: 550;
 }
 
+/* Submit button */
 .registerbtn {
     width: 100%;
     min-height: 3rem;
@@ -87,7 +94,10 @@
     font-size: 0.98rem;
     font-weight: 650;
     cursor: pointer;
-    transition: background var(--ease-standard), border-color var(--ease-standard), transform var(--ease-standard);
+    transition:
+        background var(--ease-standard),
+        border-color var(--ease-standard),
+        transform var(--ease-standard);
 }
 
 .registerbtn:hover {

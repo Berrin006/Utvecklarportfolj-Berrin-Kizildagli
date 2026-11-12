@@ -1,3 +1,4 @@
+/* Brand tokens */
 :root {
     color-scheme: light;
     --color-primary: #274245;
@@ -20,6 +21,7 @@
     --ease-standard: 180ms ease;
 }
 
+/* Base styles */
 * {
     margin: 0;
     padding: 0;
@@ -69,6 +71,7 @@ textarea:focus-visible {
     background: var(--color-accent);
 }
 
+/* Hero background and layout */
 .hero-container {
     min-height: 100vh;
     min-height: 100svh;
@@ -79,7 +82,10 @@ textarea:focus-visible {
     justify-content: center;
     position: relative;
     isolation: isolate;
-    padding: clamp(7rem, 15vh, 10rem) clamp(1.25rem, 8vw, 8rem) clamp(4rem, 10vh, 6rem);
+    padding:
+        clamp(7rem, 15vh, 10rem)
+        clamp(1.25rem, 8vw, 8rem)
+        clamp(4rem, 10vh, 6rem);
     background-image: url("webdevelopment.jpg");
     background-size: cover;
     background-position: center;
@@ -91,18 +97,24 @@ textarea:focus-visible {
     position: absolute;
     inset: 0;
     background:
-        linear-gradient(105deg, rgba(39, 66, 69, 0.96) 0%, rgba(39, 66, 69, 0.86) 55%, rgba(39, 66, 69, 0.68) 100%),
+        linear-gradient(
+            105deg,
+            rgba(39, 66, 69, 0.96) 0%,
+            rgba(39, 66, 69, 0.86) 55%,
+            rgba(39, 66, 69, 0.68) 100%
+        ),
         rgba(39, 66, 69, 0.4);
     z-index: 1;
 }
 
-.hero-container .MyName,
+.hero-container .hero-title,
 .hero-container .hero-subtitle {
     position: relative;
     z-index: 2;
 }
 
-.MyName {
+/* Hero typography */
+.hero-title {
     display: inline-block;
     width: fit-content;
     max-width: 100%;
@@ -130,6 +142,7 @@ textarea:focus-visible {
     letter-spacing: 0.01em;
 }
 
+/* Reduced-motion preference */
 @media (prefers-reduced-motion: reduce) {
     *,
     *::before,

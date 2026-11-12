@@ -1,3 +1,4 @@
+/* Tablet and compact navigation */
 @media (max-width: 760px) {
     .hero-container {
         padding-right: 1.5rem;
@@ -62,6 +63,7 @@
     }
 }
 
+/* Small-screen layout */
 @media (max-width: 540px) {
     .about-section {
         width: calc(100% - 2rem);
