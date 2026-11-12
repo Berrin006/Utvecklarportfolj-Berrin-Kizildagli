@@ -1,37 +1,66 @@
-nav {
-    background: transparent !important;
-    background-color: transparent !important;
-    padding: 20px 40px;
+.hero-container nav {
+    position: absolute;
+    inset: 0 0 auto;
+    z-index: 10;
+    width: 100%;
+    padding: 1.25rem clamp(1.25rem, 5vw, 4rem);
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    box-shadow: none !important;
-    border: none !important;
-
-    position: absolute !important; 
-    top: 0 !important;
-    left: 0 !important;
-    width: 100% !important;
-    z-index: 1000 !important;
+    background: transparent;
 }
 
 .nav-links {
     display: flex;
     align-items: center;
-    background: transparent !important;
+    gap: 0.35rem;
 }
 
-nav a {
-    display: inline-block;
-    padding: 8px 16px;
+.nav-links a {
+    padding: 0.65rem 0.9rem;
+    color: #F1F4EC;
+    border: 1px solid transparent;
+    border-radius: 999px;
+    font-size: 0.92rem;
     font-weight: 600;
     text-decoration: none;
-    color: #ffffff !important; 
-    font-size: 0.95rem;
-    transition: color 0.2s ease;
+    transition: color var(--ease-standard), background var(--ease-standard), border-color var(--ease-standard);
 }
 
-nav a:hover,
-nav a:focus {
-    color: #38bdf8 !important;
+.nav-links a:hover,
+.nav-links a:focus-visible,
+.nav-links a:active,
+.nav-links a[aria-current="page"] {
+    color: var(--color-accent);
+    background: rgba(223, 214, 174, 0.12);
+    border-color: rgba(223, 214, 174, 0.35);
+}
+
+.nav-links a:focus-visible,
+.nav-toggle:focus-visible {
+    outline-color: var(--color-accent);
+}
+
+.nav-toggle {
+    display: none;
+    width: 2.85rem;
+    height: 2.85rem;
+    padding: 0.7rem;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.28rem;
+    color: var(--color-accent);
+    background: rgba(39, 66, 69, 0.82);
+    border: 1px solid rgba(223, 214, 174, 0.55);
+    border-radius: 0.85rem;
+    cursor: pointer;
+    backdrop-filter: blur(12px);
+}
+
+.nav-toggle span {
+    width: 100%;
+    height: 2px;
+    display: block;
+    background: currentColor;
+    border-radius: 999px;
 }

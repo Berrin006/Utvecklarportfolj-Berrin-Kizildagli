@@ -3,16 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Berrin Kizildagli is a full-stack development student in Stockholm, focused on .NET and modern web development."
+    />
+    <meta name="theme-color" content="#0b1220" />
     <title>Developer Portfolio — Berrin Kizildagli</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="navbar.css" />
-    <link rel="stylesheet" href="iconslinks.css" />
+    <link rel="stylesheet" href="iconsLinks.css" />
     <link rel="stylesheet" href="about.css" />
     <link rel="stylesheet" href="skills.css" />
     <link rel="stylesheet" href="footer.css" />
-    <link rel="stylesheet" href="responsivedesign.css" />
-    <link rel="stylesheet" href="weather.css" />
     <link rel="stylesheet" href="form.css" />
+    <link rel="stylesheet" href="responsivedesign.css" />
     <script
       src="https://kit.fontawesome.com/9460d60ee2.js"
       crossorigin="anonymous"
@@ -21,23 +25,30 @@
   </head>
 
   <body>
-    <header>
-      <nav>
-        <div class="nav-links">
-          <a href="index.html">Home</a>
-          <a href="#about">About Me</a>
-          <a href="#skills">Skills</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
-        </div>
-
-        
-      </nav>
-    </header>
-
     <main>
       <div class="hero-container">
-        <h1 class="MyName">Berrin Kizildagli</h1>
+        <nav aria-label="Primary navigation">
+          <button
+            class="nav-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="primary-navigation"
+            aria-label="Open navigation"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <div class="nav-links" id="primary-navigation">
+            <a href="index.html">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </nav>
+
+        <h1 class="MyName" id="hero-heading">Berrin Kizildagli</h1>
         <p class="hero-subtitle">Full-Stack Web Developer & .NET Enthusiast</p>
       </div>
 
@@ -45,15 +56,17 @@
         <a
           href="BERRIN-KIZILDAGLI-CV.pdf"
           target="_blank"
+          rel="noopener noreferrer"
           title="CV"
           class="cv-download-link-wrapper"
         >
-          <button type="button" class="cv-download-btn"><i class="fa-solid fa-file-arrow-down"></i> CV</button>
+          <span class="cv-download-btn"><i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i> CV</span>
         </a>
 
         <a
           href="https://www.instagram.com/berkiz14/"
           target="_blank"
+          rel="noopener noreferrer"
           title="Instagram"
           aria-label="Instagram"
         >
@@ -63,6 +76,7 @@
         <a
           href="https://www.linkedin.com/in/berrinkizildagli/"
           target="_blank"
+          rel="noopener noreferrer"
           title="Linkedin"
           aria-label="LinkedIn"
         >
@@ -73,29 +87,29 @@
           <i class="fa-solid fa-address-book"></i>
         </a>
 
-        <a href="https://github.com/Berrin006" target="_blank" title="GitHub" aria-label="GitHub">
+        <a href="https://github.com/Berrin006" target="_blank" rel="noopener noreferrer" title="GitHub" aria-label="GitHub">
           <i class="fa-brands fa-github"></i>
         </a>
       </div>
 
       <section id="about" class="about-section">
-        <h2 id="about-heading">ABOUT ME 👩🏻</h2>
+        <h2 id="about-heading">About me</h2>
         <p>
           I am Berrin Kizildagli, a 20-year-old Full-Stack Web Development student based in Stockholm. 
           With nearly three years of experience spanning academic studies and practical hands-on projects, 
           I have built a solid foundation in programming, object-oriented design (.NET), and network technology. 
           I am highly motivated to write clean code and contribute to efficient, scalable technical solutions.
         </p>
-            <img
-              src="ben.jpeg"
-              alt="Porträttbild av Berrin Kizildagli"
-              title="It's Me Hi!"
-              class="profile-img"
-          />
+        <img
+          src="ben.jpeg"
+          alt="Porträttbild av Berrin Kizildagli"
+          title="It's Me Hi!"
+          class="profile-img"
+        />
       </section>
 
       <section id="skills" class="about-section">
-        <h2>Skills 🛠️</h2>
+        <h2>Skills</h2>
         <div class="skills-icons">
           <div class="skill-item"><img src="C++_Logo.svg.png" alt="C++ logo" /></div>
           <div class="skill-item"><img src="Csharp_Logo.png" alt="C# logo" /></div>
@@ -115,7 +129,7 @@
       </section>
 
       <section id="projects" class="about-section">
-        <h2 class="projects">Projects 🗂️</h2>
+        <h2 class="projects">Projects</h2>
 
         <div class="project-card-grid">
           <!-- Produkt List -->
@@ -123,10 +137,10 @@
             <h3>Produkt List</h3>
             <p class="project-desc">A modern product list application built to manage items cleanly and efficiently.</p>
             <div class="project-links">
-              <a href="https://github.com/Berrin006/ProductApp" target="_blank" title="View Preview">
+              <a href="https://github.com/Berrin006/ProductApp" target="_blank" rel="noopener noreferrer" title="View Product List project">
                 <img src="projectlistlinkbild.png" alt="ProductApp preview"/>
               </a>
-              <a href="https://github.com/Berrin006/ProductApp" target="_blank" title="Link to GitHub">
+              <a href="https://github.com/Berrin006/ProductApp" target="_blank" rel="noopener noreferrer" title="View Product List source code">
                 <i class="fa-brands fa-github"></i> Source Code
               </a>
             </div>
@@ -137,10 +151,10 @@
             <h3>SystemMentorZoo</h3>
             <p class="project-desc">An interactive zoo management web application demonstrating robust frontend logic.</p>
             <div class="project-links">
-              <a href="https://github.com/Berrin006/SystemMentorZoo" target="_blank" title="Live Demo">
+              <a href="https://github.com/Berrin006/SystemMentorZoo" target="_blank" rel="noopener noreferrer" title="View SystemMentorZoo project">
                 <img src="systemmentorzoolinkbild.png" alt="SystemMentorZoo preview"/>
               </a>
-              <a href="https://github.com/Berrin006/SystemMentorZoo" target="_blank" title="Link to GitHub">
+              <a href="https://github.com/Berrin006/SystemMentorZoo" target="_blank" rel="noopener noreferrer" title="View SystemMentorZoo source code">
                 <i class="fa-brands fa-github"></i> Source Code
               </a>
             </div>
@@ -151,10 +165,10 @@
             <h3>Core Fitness</h3>
             <p class="project-desc">A full-stack cloud-hosted fitness tracking web service deployed live via Azure.</p>
             <div class="project-links">
-              <a href="https://corefitnessberrinkizildagli-fkgub5cbc6aefydp.swedencentral-01.azurewebsites.net" target="_blank" title="Live Demo">
+              <a href="https://corefitnessberrinkizildagli-fkgub5cbc6aefydp.swedencentral-01.azurewebsites.net" target="_blank" rel="noopener noreferrer" title="Open Core Fitness live demo">
                 <img src="corefitness.png" alt="Core Fitness preview"/>
               </a>
-              <a href="https://github.com/Berrin006/CoreFitness-BerrinKizildagli" target="_blank" title="Link to GitHub">
+              <a href="https://github.com/Berrin006/CoreFitness-BerrinKizildagli" target="_blank" rel="noopener noreferrer" title="View Core Fitness source code">
                 <i class="fa-brands fa-github"></i> Source Code
               </a>
             </div>
@@ -165,7 +179,7 @@
             <h3>Min bokshop</h3>
             <p class="project-desc">My published book! An e-commerce platform where you can purchase my first book.</p>
             <div class="project-links">
-              <a href="https://webshop.publit.com/webshop/6352/9789199235707/min-forsta-turkiska-bok-merhaba-turkce-dunyasina-hosgeldin" target="_blank" title="Live Demo">
+              <a href="https://webshop.publit.com/webshop/6352/9789199235707/min-forsta-turkiska-bok-merhaba-turkce-dunyasina-hosgeldin" target="_blank" rel="noopener noreferrer" title="Visit the bookshop">
                 <img src="omslaget_page-0001.jpg" alt="My bookshop preview" class="book-img"/>
               </a>
             </div>
@@ -175,7 +189,7 @@
       </section>
 
       <section id="references" class="about-section">
-        <h2 class="Reference">Reference 🤝🏻</h2>
+        <h2 class="Reference">Reference</h2>
         <blockquote cite="Morgan Malm, High School Teacher">
           <p>
             "Berrin is an exceptionally driven and fast-learning student 
@@ -185,9 +199,7 @@
           <p class="person">— Morgan Malm, High School Teacher & Mentor</p>
         </blockquote>
       </section>
-    </main>
-
-    <section id="form-section">
+    <section id="form-section" aria-labelledby="register-heading">
       <div class="form-section" id="contact">
         <h2 id="register-heading">Get in Touch</h2>
         <form
@@ -241,23 +253,24 @@
         </form>
       </div>
     </section>
+  </main>
 
     <footer>
       <div class="footer-content">
         <div class="contactMe-section">
           <ul>
             <li>
-              <a href="https://www.instagram.com/berkiz14/" target="_blank" aria-label="Instagram profile">
+              <a href="https://www.instagram.com/berkiz14/" target="_blank" rel="noopener noreferrer" aria-label="Instagram profile">
                 <i class="fa-brands fa-instagram"></i> @berkiz14
               </a>
             </li>
             <li>
-              <a href="https://www.linkedin.com/in/berrin-kizildagli-10ba9b201/" target="_blank" aria-label="LinkedIn profile">
+              <a href="https://www.linkedin.com/in/berrinkizildagli-10ba9b201/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
                 <i class="fa-brands fa-linkedin"></i> LinkedIn
               </a>
             </li>
             <li>
-              <a href="https://github.com/Berrin006" target="_blank" aria-label="GitHub profile">
+              <a href="https://github.com/Berrin006" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
                 <i class="fa-brands fa-github"></i> GitHub
               </a>
             </li>

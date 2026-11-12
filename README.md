@@ -30,8 +30,8 @@ Projektet bygger på ren HTML5, CSS3 och JavaScript, med fokus på modern standa
 
 1. Responsiv Design & Layout
 
-* Responsivitet: Mobile-First-strategi med omfattande CSS Media Queries (`responsivedesign.css`). Layouten anpassar sig flytande till alla enheter, inklusive omstrukturering av navbar och footer på små skärmar.
-* Layout: Användning av `display: flex`. Flexbox används i stor utsträckning för att centrera innehåll, bygga navigationsmenyer och hantera gallerier.
+* Responsivitet: Media queries i `responsivedesign.css` anpassar layouten för mobil, surfplatta och desktop. Navigeringen använder en tillgänglig hamburgermeny på mindre skärmar.
+* Layout: CSS Grid och Flexbox används för responsiva projektkort, färdighetsikoner, navigering och sidsektioner.
 
 1. Formulärvalidering och Felhantering
 
@@ -41,16 +41,12 @@ Formulärvalideringen i `app.js` är designad för att garantera en hög data-kv
 * Varningstexter: Realtidsvalidering och tydliga felmeddelanden. Relevanta varningstexter visas under respektive fält, och det felaktiga fältet markeras visuellt med en röd kant.
 * Testning: Robusta kontroller i `app.js` garanterar att endast korrekt formaterad data kan skickas.
 
-3. Extern API-Integration
-
-* Väder API: Asynkron hämtning av data från OpenWeatherMap API i `app.js`. Resultatet (temperatur, plats, fuktighet och väderikon) konverteras och visas i en dropdown-widget i navbaren. Temperatur visas i Celsius.
-
-4. Kodstruktur, Praktik och Tillgänglighet
+3. Kodstruktur, Praktik och Tillgänglighet
 
 * God Praxis: Användning av återanvändbara JS-funktioner (DRY) och en tydlig, semantisk HTML-struktur.
 * Semantik & Robusthet: Korrekta HTML5-element (`<header>`, `<main>`, `<section>`, `<footer>`, `<nav>`) och rubriktaggar säkerställer att strukturen är meningsfull för skärmläsare och sökmotorer.
 * WCAG-Tillgänglighet: `alt`-attribut på alla meningsfulla bilder och `aria-label` på länkikoner utan text (t.ex. i footern) för bättre upplevelse för skärmläsare.
-* Professionell Klass: Genomförandet med API-integration, detaljerad validering, och den omfattande dokumentationen (README och WCAG-rapport) bidrar till professionell klass.
+* Professionell Klass: Formulärvalidering, responsiv design och tillgänglighetsdokumentation bidrar till en genomarbetad helhet.
 * WCAG-Rapport: En separat PDF-rapport har skapats för att i detalj förklara hur WCAG 2.1 AA-standarder har applicerats i projektet.
 
 ---
@@ -59,8 +55,7 @@ Tekniker som använts
 
 * HTML5: För sidans semantiska struktur.
 * CSS3: För styling, animationer, och responsivitet.
-* JavaScript: För API-integration och formulärinteraktivitet.
-* OpenWeatherMap API: För extern datahämtning.
+* JavaScript: För mobilnavigering och formulärvalidering.
 * Font Awesome: För ikoner.
 
 ---

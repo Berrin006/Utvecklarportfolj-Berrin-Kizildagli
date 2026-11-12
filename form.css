@@ -1,89 +1,101 @@
 #form-section {
-    padding: 40px 20px;
-    background-color: #f1f5f9;
+    padding: clamp(3rem, 7vw, 5rem) 1.25rem;
     display: flex;
     justify-content: center;
+    background: linear-gradient(180deg, transparent, rgba(39, 66, 69, 0.08));
+    scroll-margin-top: 1.5rem;
 }
 
 .form-section {
-    max-width: 550px;
-    width: 100%;
-    background-color: #ffffff;
-    padding: 35px;
-    border-radius: 12px;
-    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
-    border: 1px solid #e2e8f0;
+    width: min(100%, 38rem);
+    padding: clamp(1.5rem, 4vw, 2.5rem);
+    background: var(--color-primary);
+    border: 1px solid var(--color-card-border);
+    border-radius: var(--radius-card);
+    box-shadow: var(--shadow-card);
+    color: var(--color-card-text);
     text-align: left;
 }
 
 #register-heading {
-    text-align: center;
-    color: #1e293b;
-    margin-bottom: 25px;
-    font-size: 1.8rem;
-    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: var(--color-accent);
+    font-size: clamp(1.55rem, 3vw, 2rem);
+    font-weight: 750;
+    letter-spacing: -0.035em;
+    text-align: left;
 }
 
 .container label {
     display: block;
-    margin-top: 15px;
-    margin-bottom: 6px;
-    color: #334155;
-    font-weight: 600;
-    font-size: 0.95rem;
+    margin: 1rem 0 0.4rem;
+    color: var(--color-accent);
+    font-size: 0.92rem;
+    font-weight: 650;
 }
 
-.container input[type=text],
-.container input[type=email],
+.container input[type="text"],
+.container input[type="email"],
 .container textarea {
     width: 100%;
-    padding: 12px;
-    margin: 0;
-    display: inline-block;
-    border: 1px solid #cbd5e1;
-    box-sizing: border-box;
-    border-radius: 6px;
-    font-size: 15px;
-    background-color: #f8fafc;
-    color: #1e293b;
-    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    min-height: 2.9rem;
+    padding: 0.75rem 0.85rem;
+    display: block;
+    color: var(--color-card-text);
+    background: var(--color-card-item);
+    border: 1px solid var(--color-card-border);
+    border-radius: 0.7rem;
+    font-size: 1rem;
+    transition: border-color var(--ease-standard), box-shadow var(--ease-standard), background var(--ease-standard);
 }
 
-textarea {
-    resize: vertical; 
-    max-width: 100%;
+.container textarea {
+    min-height: 9rem;
+    resize: vertical;
+}
+
+.container input::placeholder,
+.container textarea::placeholder {
+    color: var(--color-card-muted);
 }
 
 .container input:focus,
 .container textarea:focus {
-    border-color: #0284c7;
+    background: rgba(255, 255, 255, 0.1);
+    border-color: var(--color-accent);
     outline: none;
-    background-color: #ffffff;
-    box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.15);
+    box-shadow: 0 0 0 4px rgba(223, 214, 174, 0.2);
 }
 
 .field-error {
-    color: #ef4444;
+    min-height: 0;
+    margin: 0.3rem 0 0;
+    color: #FFC7C7;
     font-size: 0.85rem;
-    margin-top: 4px;
-    margin-bottom: 10px;
-    font-weight: 500;
+    font-weight: 550;
 }
 
 .registerbtn {
-    background-color: #0f172a;
-    color: white;
-    padding: 14px 20px;
-    margin: 20px 0 0 0;
-    border: none;
-    cursor: pointer;
     width: 100%;
-    border-radius: 6px;
-    font-size: 16px;
-    font-weight: 600;
-    transition: background-color 0.2s ease, transform 0.2s ease;
+    min-height: 3rem;
+    margin-top: 1.25rem;
+    padding: 0.8rem 1rem;
+    color: var(--color-primary);
+    background: var(--color-accent);
+    border: 1px solid var(--color-accent);
+    border-radius: 0.7rem;
+    font-size: 0.98rem;
+    font-weight: 650;
+    cursor: pointer;
+    transition: background var(--ease-standard), border-color var(--ease-standard), transform var(--ease-standard);
 }
 
 .registerbtn:hover {
-    background-color: #334155;
+    color: var(--color-primary);
+    background: var(--color-card-text);
+    border-color: var(--color-card-text);
+}
+
+.registerbtn:active {
+    transform: translateY(1px);
 }

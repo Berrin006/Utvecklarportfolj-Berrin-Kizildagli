@@ -1,4 +1,41 @@
 document.addEventListener('DOMContentLoaded', () => {
+    const nav = document.querySelector('.hero-container nav');
+    const navToggle = nav && nav.querySelector('.nav-toggle');
+    const navLinks = nav && nav.querySelector('.nav-links');
+
+    if (nav && navToggle && navLinks) {
+        function setMenuOpen(isOpen) {
+            navToggle.setAttribute('aria-expanded', String(isOpen));
+            navToggle.setAttribute('aria-label', isOpen ? 'Close navigation' : 'Open navigation');
+            navLinks.classList.toggle('is-open', isOpen);
+        }
+
+        nav.classList.add('has-menu-toggle');
+
+        navToggle.addEventListener('click', () => {
+            setMenuOpen(navToggle.getAttribute('aria-expanded') !== 'true');
+        });
+
+        navLinks.addEventListener('click', (event) => {
+            if (event.target.closest('a')) {
+                setMenuOpen(false);
+            }
+        });
+
+        nav.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape' && navToggle.getAttribute('aria-expanded') === 'true') {
+                setMenuOpen(false);
+                navToggle.focus();
+            }
+        });
+
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 760) {
+                setMenuOpen(false);
+            }
+        });
+    }
+
     // --- FORM VALIDATION ---
     const form = document.getElementById('contactForm');
     const nameInput = document.getElementById('fname');
